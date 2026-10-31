@@ -1,0 +1,88 @@
+﻿{
+	"caption": "@s{section_name/forest}: @s{block_name/} @s{block_name/db03}",
+	"content": [
+		{
+			"if": {
+				"tile": "forest_open.1.dl"
+			},
+			"else": [
+				{
+					"summary": "@s{hint/step}{1}",
+					"open": true,
+					"details": [
+						{
+							"guide": "tips/complete_block/common/candidate_1"
+						},
+						"@s{hint/common/start/one_cell}",
+						{
+							"if": {
+								"tile": "forest_open.1.dr"
+							},
+							"else": [
+								{
+									"field": [0, 0]
+								},
+								"@s{hint/forest/open/unknown}"
+							],
+							"then": {
+								"field": [0, 1]
+							}
+						},
+						"@s{hint/common/next/one_cell}"
+					]
+				},
+				{
+					"summary": "@s{hint/step}{2}",
+					"details": [
+						{
+							"guide": "rule/complete_block/fill"
+						},
+						"@s{hint/common/impossible/one_cell}"
+					]
+				}
+			]
+		},
+		[
+			{
+				"summary": "@s{hint/step}{1}",
+				"open": true,
+				"details": [
+					{
+						"guide": "tips/complete_block/common/candidate_1"
+					},
+					"@s{hint/common/start/multiple_cells}",
+					{
+						"field": [0, 2]
+					},
+					"@s{hint/common/next/multiple_cells}"
+				]
+			},
+			{
+				"summary": "@s{hint/step}{2}",
+				"details": [
+					{
+						"guide": "tips/complete_block/common/candidate_1"
+					},
+					"@s{hint/common/middle/multiple_cells}",
+					"@s{hint/common/useless/multiple_tiles}{@t{forest_open.1.dr} @t{forest_open.1.dl}}",
+					{
+						"field": [0, 3]
+					},
+					"@s{hint/common/next/multiple_cells}"
+				]
+			},
+			{
+				"summary": "@s{hint/step}{3}",
+				"details": [
+					{
+						"guide": "tips/complete_block/common/candidate_1"
+					},
+					"@s{hint/common/possible/skip/multiple_cells}",
+					{
+						"field": [0, 4]
+					}
+				]
+			}
+		]
+	]
+}

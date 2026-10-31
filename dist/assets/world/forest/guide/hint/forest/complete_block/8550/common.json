@@ -1,0 +1,110 @@
+﻿{
+	"caption": "@s{section_name/forest}: @s{block_name/} @s{block_name/8550}",
+	"content": [
+		{
+			"if": {
+				"tile": "forest_open.1.ul"
+			},
+			"else": [
+				{
+					"summary": "@s{hint/step}{1}",
+					"open": true,
+					"details": [
+						{
+							"guide": "tips/complete_block/common/candidate_1"
+						},
+						"@s{hint/common/start/multiple_cells}",
+						{
+							"field": [0, 0]
+						},
+						"@s{hint/common/next/multiple_cells}"
+					]
+				},
+				{
+					"summary": "@s{hint/step}{2}",
+					"details": [
+						{
+							"guide": "tips/complete_block/road/closed"
+						},
+						"@s{hint/common/middle/multiple_cells}\n@s{hint/forest/road/closed/warning/new}",
+						[
+							{
+								"if": {
+									"tile": "forest_open.1.ur"
+								},
+								"then": "@s{hint/common/useless/multiple_tiles}{@t{forest_open.1.dr} @t{forest_open.1.dl} @t{forest_open.1.ur}}"
+							},
+							{
+								"if": {
+									"tile": "forest_open.1.dr"
+								},
+								"then": "@s{hint/common/useless/multiple_tiles}{@t{forest_open.1.dr} @t{forest_open.1.dl}}"
+							},
+							{
+								"if": {
+									"tile": "forest_open.1.dl"
+								},
+								"then": "@s{hint/common/useless/one_tile}{@t{forest_open.1.dr}}"
+							}
+						],
+						{
+							"field": [0, 1]
+						},
+						"@s{hint/forest/road/closed/next/one_road/multiple_cells}"
+					]
+				},
+				{
+					"summary": "@s{hint/step}{3}",
+					"details": [
+						{
+							"guide": "rule/complete_block/road"
+						},
+						"@s{hint/forest/road/closed/impossible/one_road/multiple_cells}"
+					]
+				}
+			]
+		},
+		{
+			"summary": "@s{hint/step}{1}",
+			"open": true,
+			"details": [
+				{
+					"guide": "tips/complete_block/common/candidate_1"
+				},
+				{
+					"guide": "tips/complete_block/common/candidate_2"
+				},
+				"@s{hint/common/start/multiple_cells}",
+				{
+					"field": [0, 2]
+				},
+				"@s{hint/common/next/multiple_cells}"
+			]
+		},
+		{
+			"summary": "@s{hint/step}{2}",
+			"details": [
+				{
+					"guide": "tips/complete_block/common/candidate_1"
+				},
+				"@s{hint/common/middle/multiple_cells}",
+				{
+					"field": [0, 3]
+				},
+				"@s{hint/common/next/multiple_cells}"
+			]
+		},
+		{
+			"summary": "@s{hint/step}{3}",
+			"details": [
+				{
+					"guide": "tips/complete_block/open/fill"
+				},
+				"@s{hint/common/end/multiple_cells}\n@s{hint/forest/open/fill/with}",
+				{
+					"field": [0, 4]
+				}
+			]
+		}
+	]
+}

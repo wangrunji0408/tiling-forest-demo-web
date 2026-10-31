@@ -1,0 +1,56 @@
+{
+	"caption": "Create road endpoints to adjust color imbalance.",
+	"content": [
+		"By choosing where to place lot-with-road tiles @t{forest_open_road.r}, you can adjust the @g{tips/complete_block/common/color_imbalance}{color imbalance} of the roads connected to them. This makes it possible to @b{match the color imbalance of the terrain you create with that of the Area}, which cannot be done with @g{tips/complete_block/road/parity}{simple roads with fixed endpoints} or @g{tips/complete_block/open/parity}{empty lots with no interior}.",
+		"In the following examples, assume that your available tiles are @t{forest_road.2s.lr} @t{forest_road.2t.dr} @t{forest_open.1.dr} @t{forest_open.2s.r} @t{forest_open_road.r} and their rotations.",
+		{
+			"caption": "Example 1",
+			"content": [
+				"Let's solve the following Area.",
+				{
+					"field": [0, 0]
+				},
+				"This Area has a color imbalance of ±0 (@m{true} 8 @m{false} 8).\nThe road entering the Area starts on a white cell @m{true}, so its color imbalance will be +1 if its other endpoint is also white @m{true}, or ±0 if its other endpoint is black @m{false}.",
+				"If the road has a color imbalance of +1, it will not match the Area's color imbalance of ±0, so it cannot fill every cell.",
+				{
+					"field": [0, 1]
+				},
+				"Therefore, the road's other endpoint must be a black cell @m{false}.\nTo make this happen, a lot-with-road tile @t{forest_open_road.r} must be placed on a white cell @m{true}. The only place where this is possible is the cell @m{satisfied}, where there are no obstructing tiles @T{forest.blank} nearby.",
+				{
+					"field": [0, 2]
+				},
+				"Continuing the logical deductions from here completes the Area as shown.",
+				{
+					"field": [0, 3]
+				},
+				{
+					"summary": "Note (feel free to skip this if it seems too complicated)",
+					"details": [
+						"The reasoning above implicitly assumes that only one road is created.\nIf multiple roads are created, even if the road entering the Area has a color imbalance of +1, another road with a color imbalance of -1 can cancel it out. However, a road with a color imbalance of -1 must have black cells @m{false} at both endpoints, so the conclusion remains the same: @b{at least one lot-with-road tile @t{forest_open_road.r} must be placed on a white cell @m{true}}."
+					]
+				}
+			]
+		},
+		{
+			"caption": "Example 2",
+			"content": [
+				"Let's solve the following Area.",
+				{
+					"field": [1, 0]
+				},
+				"This Area has a color imbalance of -1 (@m{true} 6 @m{false} 7).\nIf the two roads entering the Area are connected by a simple road, its color imbalance will be ±0. Since this does not match the Area's color imbalance, the road cannot fill every cell.",
+				{
+					"field": [1, 1]
+				},
+				"To match the color imbalance, create a lot-with-road that splits the road into two.\nWe need the two roads to have color imbalances of ±0 and -1, for a total of -1 matching the Area. To do this, the left road, which starts on a white cell @m{true}, must end on a black cell @m{false}, while the upper road, which starts on a black cell @m{false}, must also end on a black cell @m{false}.\nThis means we need @b{an empty lot containing two lot-with-road tiles on white cells @m{true}}, which requires an empty lot of at least 2 × 4 cells.",
+				{
+					"field": [2, 0]
+				},
+				"There is only one place where an empty lot of this kind can be created, so the Area can be completed as shown.",
+				{
+					"field": [1, 2]
+				}
+			]
+		}
+	]
+}

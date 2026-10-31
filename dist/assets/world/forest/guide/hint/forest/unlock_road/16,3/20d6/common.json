@@ -1,0 +1,47 @@
+{
+	"caption": "@s{section_name/forest}: @s{block_name/} @s{block_name/20d6} @s{road/r}",
+	"content": [
+		{
+			"if": {
+				"tile": "forest_open_road.r"
+			},
+			"else": [
+				{
+					"summary": "@s{hint/step}{1}",
+					"open": true,
+					"details": [
+						{
+							"guide": "tips/unlock_block/inaccessible"
+						},
+						"@s{hint/unlock/inaccessible/start/one_cell}",
+						{
+							"field": [0, 0]
+						},
+						"@s{hint/unlock/inaccessible/next}"
+					]
+				},
+				{
+					"summary": "@s{hint/step}{2}",
+					"details": [
+						{
+							"guide": "rule/unlock_block/connect"
+						},
+						"@s{hint/unlock/inaccessible/filter/one_cell}\n@s{hint/unlock/inaccessible/impossible/one_cell}",
+						{
+							"field": [0, 1]
+						}
+					]
+				}
+			]
+		},
+		[
+			{
+				"guide": "tips/unlock_block/via_open"
+			},
+			"@s{hint/unlock/possible}\n@s{hint/forest/unlock/via_open}",
+			{
+				"field": [0, 2]
+			}
+		]
+	]
+}

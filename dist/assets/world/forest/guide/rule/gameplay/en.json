@@ -1,0 +1,41 @@
+{
+	"caption": "Game Flow",
+	"content": [
+		"This is a puzzle game where you complete @b{Areas} using the @b{tiles} you have.",
+		{
+			"caption": "Unlocking and Completing Areas",
+			"content": [
+				"Connect roads using your road tiles to unlock new Areas.\nPlace tiles in an Area and meet all of its conditions to complete it and @b{obtain new tiles}.",
+				{
+					"box": "info",
+					"content": [
+						"If you don't have enough tiles, you won't be able to complete an Area.\n@b{Figuring out whether an Area can be completed} is also part of the puzzle.",
+						"In this game, it's important not only to @b{solve an Area positively} (by completing it) to obtain new tiles, but also to @b{solve it negatively} (by proving that it cannot be completed), narrowing down the Areas that can be completed.",
+						"Because of this, there are more puzzles to solve than it may first appear. Take your time and work through them at your own pace."
+					]
+				}
+			]
+		},
+		{
+			"caption": "Clearing the Forest",
+			"content": [
+				"Tiling Forest is the demo version of Tiling Town, featuring a special Forest stage different from the stages in the full game.\nComplete Areas and clear Tiling Forest!"
+			]
+		},
+		{
+			"if": {
+				"tile": "forest_gate.u"
+			},
+			"then": {
+				"update": 2,
+				"content": {
+					"caption": "Completing the Forest",
+					"content": [
+						"Then, meet all the conditions for completing the Forest to fully clear Tiling Forest!",
+						"The puzzles from this point on are more difficult, comparable to @b{the later Towns in the full version of Tiling Town}. If they feel too difficult, you can come back after playing the full version. The full version also includes @b{the Forest stage as a separate bonus mode}, apart from the main Town stages."
+					]
+				}
+			}
+		}
+	]
+}

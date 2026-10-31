@@ -1,0 +1,26 @@
+{
+	"caption": "Connecting roads to unreached roads",
+	"content": [
+		"Unreached outside roads are marked with @i{road_locker}.",
+		{
+			"field": [0, 0]
+		},
+		"You can progress when they are connected to a @b{reached} @b{outside} road.",
+		{
+			"field": [0, 1]
+		},
+		{
+			"caption": "Failed examples",
+			"content": [
+				"e.g. 1: Unreached roads are connected to each other. Either must be reached first.",
+				{
+					"field": [1, 0]
+				},
+				"e.g. 2: An unreached road is connected to inside road. The starting road must be outside.",
+				{
+					"field": [1, 1]
+				}
+			]
+		}
+	]
+}

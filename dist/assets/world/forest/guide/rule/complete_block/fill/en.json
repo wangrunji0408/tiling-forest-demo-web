@@ -1,0 +1,18 @@
+{
+	"caption": "Condition to complete Areas: Tile",
+	"content": [
+		"You need to place tiles on all the cells in the Area.",
+		{
+			"field": [0, 0]
+		},
+		{
+			"caption": "Failed example",
+			"content": [
+				"You still have empty cells. All cells must be filled.",
+				{
+					"field": [0, 1]
+				}
+			]
+		}
+	]
+}

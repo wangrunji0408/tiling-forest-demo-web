@@ -1,0 +1,11 @@
+[
+	{
+		"id": "connection",
+		"type": "connection"
+	},
+	{
+		"id": "flower",
+		"type": "unique_gate",
+		"path": "road"
+	}
+]

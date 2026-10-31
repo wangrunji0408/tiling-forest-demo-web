@@ -1,0 +1,80 @@
+{
+	"caption": "How to use stump tiles",
+	"content": [
+		"The stump tile @t{forest_gate.r} greatly expands the ways you can fill Areas. However, when it comes to meeting @g{rule/complete_block/stump}{the conditions for completing Areas}, the valid placements are more limited than they may seem.",
+		{
+			"caption": "Example 1",
+			"content": [
+				"Assuming your available tiles are @t{forest_road.2s.lr} @t{forest_road.2t.dr} @t{forest_open.1.dr} @t{forest_open.2s.r} @t{forest_open_road.r} @t{forest_gate.r} and their rotations, let's solve this Area.",
+				{
+					"field": [0, 0]
+				},
+				"First, focus on the cell @m{pending}. The tiles that can be placed here are @t{forest_road.2t.ur}, @t{forest_open.1.ur}, or one of the stump tiles @t{forest_gate.r} @t{forest_gate.d} @t{forest_gate.l} @t{forest_gate.u}. However, considering @g{tips/complete_block/common/candidate_2}{the possible tiles for the surrounding cells}, neither @t{forest_road.2t.ur} nor @t{forest_open.1.ur} can be placed, so we can see that we must place a stump tile.",
+				{
+					"field": [0, 1]
+				},
+				"Recall that stumps must form a facing pair with exactly one cell between them. For example, if you place the right-facing stump tile @t{forest_gate.r} here, the tile @t{forest_open.1.ul} two cells away blocks the space, making it impossible to form a pair.",
+				{
+					"field": [0, 2]
+				},
+				"As a result, the only tile that can be placed in the cell @m{pending} is the upward-facing stump tile @t{forest_gate.u}, and it follows that the pairing stump and the road are placed as follows.",
+				{
+					"field": [0, 3]
+				},
+				"Next, focus on the cell @m{pending}. The tiles that can be placed here are @t{forest_road.2t.dl}, @t{forest_open.1.dl}, or one of the stump tiles @t{forest_gate.r} @t{forest_gate.d} @t{forest_gate.l} @t{forest_gate.u}. However, among these, the only tile that can actually be placed is @t{forest_road.2t.dl}. For example, if you place the downward-facing stump tile @t{forest_gate.d}, you can place another stump two cells away, but you cannot run a road through the cell @m{unsatisfied} between the stumps.",
+				{
+					"field": [0, 4]
+				},
+				"By applying the same deduction to the remaining cells, the Area is completed as follows.",
+				{
+					"field": [0, 5]
+				}
+			]
+		},
+		{
+			"caption": "Example 2",
+			"content": [
+				"Assuming your available tiles are @t{forest_road.2s.lr} @t{forest_road.2t.dr} @t{forest_open.1.dr} @t{forest_open.2s.r} @t{forest_open_road.r} @t{forest_gate.r} and their rotations, let's solve this Area.",
+				{
+					"field": [1, 0]
+				},
+				"As with @g{tips/complete_block/open_road/where_to_place}{lots-with-road}, you can also @b{use the Note feature to narrow down where stumps can be placed}.\nStart by marking every cell with @m{pending}, then remove the marks from cells where you determine that a stump tile cannot be placed.",
+				{
+					"field": [1, 1]
+				},
+				"First, stump tiles cannot be placed on the cells @m{unsatisfied} where roads enter the Area.",
+				{
+					"field": [1, 2]
+				},
+				"Also, if a stump tile were placed on the cell @m{info}, there would be no tile that could be placed on the neighboring cell @m{unsatisfied}.",
+				{
+					"field": [1, 3]
+				},
+				"For the same reason, stump tiles cannot be placed on any of the cells @m{unsatisfied}.",
+				{
+					"field": [1, 4]
+				},
+				"We can now see that if a stump tile were placed on the cell @m{info}, it could not form a pair in any direction, since none of the cells two spaces away are marked @m{pending}.",
+				{
+					"field": [1, 5]
+				},
+				"Continuing this process leaves the cells @m{pending} as the remaining candidates.",
+				{
+					"field": [1, 6]
+				},
+				"Since @b{stump tiles cannot be placed on cells without an @m{pending} mark}, we can use this information to make further deductions involving the other tiles.",
+				{
+					"field": [1, 7]
+				},
+				"Eventually, we can determine that the stump pair must be placed as shown below.",
+				{
+					"field": [1, 8]
+				},
+				"We'll skip the remaining steps, but continuing the logical deductions completes the Area as shown.",
+				{
+					"field": [1, 9]
+				}
+			]
+		}
+	]
+}

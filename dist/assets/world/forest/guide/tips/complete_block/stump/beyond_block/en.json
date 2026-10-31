@@ -1,0 +1,30 @@
+{
+	"caption": "Stump Pairs Across Areas",
+	"content": [
+		"Paired stumps do not necessarily need to be placed within the same Area.",
+		{
+			"field": [0, 0]
+		},
+		{
+			"caption": "Example",
+			"content": [
+				"Let's think about how to re-solve these Areas so as to @g{rule/complete_forest/flower}{make flowers bloom on all roads}.",
+				{
+					"field": [1, 0]
+				},
+				"To do so, at least one stump pair is required somewhere. However, there is no way to complete either the left or right Area while also creating a stump pair for each. This is because both Areas are too small: stump pairs are difficult to create in the first place, and even if one is created, @g{tips/complete_block/stump/parity}{the color imbalance of 2 caused by that stump pair} cannot be compensated for.",
+				{
+					"field": [1, 1]
+				},
+				"In cases like this, instead of considering the two Areas separately, you should consider creating a stump pair that spans across Areas. Doing so means that each Area's color imbalance is off by only 1, making the mismatch easier to compensate for.",
+				{
+					"field": [1, 2]
+				},
+				"In fact, by placing the tiles as follows, you can complete the Areas while making flowers bloom on all roads.",
+				{
+					"field": [1, 3]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,31 @@
+{
+	"caption": "@s{section_name/forest}: @s{block_name/} @s{block_name/3230} @s{road/r}",
+	"content": [
+		{
+			"summary": "@s{hint/step}{1}",
+			"open": true,
+			"details": [
+				{
+					"guide": "tips/unlock_block/inaccessible"
+				},
+				"@s{hint/unlock/inaccessible/start/multiple_cells}",
+				{
+					"field": [0, 0]
+				},
+				"@s{hint/unlock/inaccessible/next}"
+			]
+		},
+		{
+			"summary": "@s{hint/step}{2}",
+			"details": [
+				{
+					"guide": "rule/unlock_block/connect"
+				},
+				"@s{hint/unlock/inaccessible/filter/multiple_cells}\n@s{hint/unlock/inaccessible/possible/multiple_cells}",
+				{
+					"field": [0, 1]
+				}
+			]
+		}
+	]
+}

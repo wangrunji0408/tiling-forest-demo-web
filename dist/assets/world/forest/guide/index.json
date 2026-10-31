@@ -1,0 +1,346 @@
+{
+	"id": "",
+	"items": [
+		{
+			"id": "guide"
+		}
+	],
+	"categories": [
+		{
+			"id": "rule",
+			"required": {
+				"guide": "guide"
+			},
+			"items": [
+				{
+					"id": "gameplay",
+					"updates": [
+						{
+							"tile": "forest_gate.u"
+						}
+					]
+				}
+			],
+			"categories": [
+				{
+					"id": "common",
+					"items": [
+						{
+							"id": "tile"
+						},
+						{
+							"id": "open",
+							"required": {
+								"tile": "forest_open.1.dr"
+							}
+						},
+						{
+							"id": "open_road",
+							"required": {
+								"tile": "forest_open_road.l"
+							}
+						}
+					]
+				},
+				{
+					"id": "unlock_block",
+					"items": [
+						{
+							"id": "connect"
+						}
+					]
+				},
+				{
+					"id": "complete_block",
+					"items": [
+						{
+							"id": "fill",
+							"rule": "block/fill"
+						},
+						{
+							"id": "road",
+							"rule": "block/road",
+							"required": {
+								"tile": "forest_road.2t.ur"
+							}
+						},
+						{
+							"id": "stump",
+							"rule": "block/stump",
+							"required": {
+								"tile": "forest_gate.r"
+							}
+						}
+					]
+				},
+				{
+					"id": "clear_forest",
+					"items": [
+						{
+							"id": "block",
+							"rule": "section/block_some",
+							"required": {
+								"tile": "forest_road.2t.ur"
+							},
+							"deprecated": {
+								"tile": "forest_gate.r"
+							}
+						}
+					]
+				},
+				{
+					"id": "complete_forest",
+					"items": [
+						{
+							"id": "block",
+							"rule": "section/block_all",
+							"required": {
+								"tile": "forest_gate.r"
+							}
+						},
+						{
+							"id": "stump",
+							"rule": "section/stump",
+							"required": {
+								"tile": "forest_gate.u"
+							}
+						},
+						{
+							"id": "flower",
+							"rule": "section/flower",
+							"required": {
+								"tile": "forest_gate.u"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "tips",
+			"required": {
+				"guide": [
+					"guide",
+					"rule/gameplay"
+				]
+			},
+			"items": [
+				{
+					"id": "about"
+				},
+				{
+					"id": "hint",
+					"required": {
+						"tile": "forest_road.2t.ur"
+					},
+					"premise": "tips/about"
+				}
+			],
+			"categories": [
+				{
+					"id": "unlock_block",
+					"required": {
+						"guide": "tips/about"
+					},
+					"items": [
+						{
+							"id": "few_tiles",
+							"premise": "rule/unlock_block/connect"
+						},
+						{
+							"id": "inaccessible",
+							"required": {
+								"tile": "forest_road.2t.ur"
+							},
+							"premise": "rule/unlock_block/connect"
+						},
+						{
+							"id": "via_open",
+							"required": {
+								"tile": "forest_open_road.l"
+							},
+							"premise": "rule/common/open_road"
+						}
+					]
+				},
+				{
+					"id": "complete_block",
+					"required": {
+						"guide": "tips/about"
+					},
+					"categories": [
+						{
+							"id": "common",
+							"items": [
+								{
+									"id": "candidate_1",
+									"premise": "rule/complete_block/fill"
+								},
+								{
+									"id": "candidate_2",
+									"required": {
+										"tile": "forest_open.1.ur"
+									},
+									"premise": "tips/complete_block/common/candidate_1"
+								},
+								{
+									"id": "parity",
+									"required": {
+										"tile": "forest_road.2s.ud"
+									}
+								},
+								{
+									"id": "color_imbalance",
+									"required": {
+										"tile": "forest_open_road.l"
+									},
+									"premise": "tips/complete_block/common/parity"
+								}
+							]
+						},
+						{
+							"id": "road",
+							"items": [
+								{
+									"id": "closed",
+									"required": {
+										"tile": "forest_road.2t.ur"
+									},
+									"premise": "rule/complete_block/road"
+								},
+								{
+									"id": "simple",
+									"required": {
+										"tile": "forest_road.2t.ur"
+									},
+									"premise": [
+										"rule/complete_block/fill",
+										"rule/complete_block/road"
+									]
+								},
+								{
+									"id": "parity",
+									"required": {
+										"tile": "forest_open_road.l"
+									},
+									"premise": [
+										"tips/complete_block/common/parity",
+										"tips/complete_block/road/simple"
+									]
+								}
+							]
+						},
+						{
+							"id": "open",
+							"items": [
+								{
+									"id": "fill",
+									"required": {
+										"tile": "forest_open.1.ul"
+									},
+									"premise": [
+										"rule/common/open",
+										"tips/complete_block/road/closed"
+									]
+								},
+								{
+									"id": "where_to_place",
+									"required": {
+										"tile": "forest_open_road.l"
+									},
+									"premise": [
+										"tips/complete_block/common/candidate_2",
+										"tips/complete_block/open/large"
+									]
+								},
+								{
+									"id": "parity",
+									"required": {
+										"tile": "forest_open_road.l"
+									},
+									"premise": "tips/complete_block/road/parity"
+								}
+							]
+						},
+						{
+							"id": "open_road",
+							"items": [
+								{
+									"id": "via_open",
+									"required": {
+										"tile": "forest_open_road.l"
+									},
+									"premise": [
+										"rule/common/open_road",
+										"tips/complete_block/road/simple"
+									]
+								},
+								{
+									"id": "parity",
+									"required": {
+										"tile": "forest_open_road.l"
+									},
+									"premise": "tips/complete_block/common/color_imbalance"
+								},
+								{
+									"id": "where_to_place",
+									"required": {
+										"tile": "forest_open_road.l"
+									},
+									"premise": [
+										"tips/complete_block/open/where_to_place"
+									]
+								}
+							]
+						},
+						{
+							"id": "stump",
+							"items": [
+								{
+									"id": "where_to_place",
+									"required": {
+										"tile": "forest_gate.r"
+									},
+									"premise": "rule/complete_block/stump"
+								},
+								{
+									"id": "parity",
+									"required": {
+										"guide": "tips/complete_block/common/parity",
+										"tile": "forest_gate.u"
+									},
+									"premise": "tips/complete_block/common/parity"
+								},
+								{
+									"id": "beyond_block",
+									"required": {
+										"tile": "forest_gate.u"
+									}
+								}
+							]
+						}
+					]
+				},
+				{
+					"id": "complete_forest",
+					"required": {
+						"guide": "tips/about"
+					},
+					"items": [
+						{
+							"id": "approach",
+							"required": {
+								"tile": "forest_gate.u"
+							},
+							"premise": [
+								"rule/complete_forest/block",
+								"rule/complete_forest/stump",
+								"rule/complete_forest/flower"
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

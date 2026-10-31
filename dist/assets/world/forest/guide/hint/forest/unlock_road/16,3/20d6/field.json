@@ -1,0 +1,8 @@
+{
+	"field": "hint/forest/field/20d6",
+	"progress": [
+		{"road_highlight":"(8,2)","roads":["(1,2)","(1,4)","(5,6)"],"sections":{"forest":{"blocks":{"20d6":0}}},"tiles":[{"mark":"pending","pos":"(7,2)"}]},
+		{"road_highlight":"(8,2)","roads":["(1,2)","(1,4)","(5,6)"],"sections":{"forest":{"blocks":{"20d6":0}}},"tiles":[{"mark":"unsatisfied","pos":"(7,2)"}]},
+		{"road_highlight":"(8,2)","roads":["(1,2)","(1,4)","(5,6)"],"sections":{"forest":{"blocks":{"20d6":0}}},"tiles":[{"mark":"info","pos":"(5,6)"}]}
+	]
+}

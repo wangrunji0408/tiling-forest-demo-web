@@ -1,0 +1,70 @@
+{
+	"caption": "@s{section_name/forest}: @s{block_name/} @s{block_name/adaa} @s{road/r}",
+	"content": [
+		{
+			"summary": "@s{hint/step}{1}",
+			"open": true,
+			"details": [
+				{
+					"guide": "tips/unlock_block/inaccessible"
+				},
+				"@s{hint/unlock/inaccessible/start/one_cell}",
+				{
+					"field": [0, 0]
+				},
+				"@s{hint/unlock/inaccessible/next}"
+			]
+		},
+		{
+			"summary": "@s{hint/step}{2}",
+			"details": [
+				{
+					"guide": "tips/unlock_block/inaccessible"
+				},
+				"@s{hint/unlock/inaccessible/filter/one_cell}\n@s{hint/unlock/inaccessible/middle/one_cell}",
+				{
+					"field": [0, 1]
+				},
+				"@s{hint/unlock/inaccessible/next}"
+			]
+		},
+		{
+			"summary": "@s{hint/step}{3}",
+			"details": [
+				{
+					"guide": "tips/unlock_block/inaccessible"
+				},
+				"@s{hint/unlock/inaccessible/filter/one_cell}\n@s{hint/unlock/inaccessible/middle/one_cell}",
+				{
+					"field": [0, 2]
+				},
+				"@s{hint/unlock/inaccessible/next}"
+			]
+		},
+		{
+			"summary": "@s{hint/step}{4}",
+			"details": [
+				{
+					"guide": "tips/unlock_block/inaccessible"
+				},
+				"@s{hint/unlock/inaccessible/filter/one_cell}\n@s{hint/unlock/inaccessible/middle/multiple_cells}",
+				{
+					"field": [0, 3]
+				},
+				"@s{hint/unlock/inaccessible/next}"
+			]
+		},
+		{
+			"summary": "@s{hint/step}{5}",
+			"details": [
+				{
+					"guide": "rule/unlock_block/connect"
+				},
+				"@s{hint/unlock/inaccessible/filter/multiple_cells}\n@s{hint/unlock/inaccessible/possible/multiple_cells}",
+				{
+					"field": [0, 4]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,47 @@
+{
+	"caption": "Narrow down where the required lots-with-road can be created.",
+	"content": [
+		"Lots-with-road are essential for @g{tips/complete_block/open_road/via_open}{creating road branches and dead ends} and @g{tips/complete_block/open_road/parity}{adjusting the color imbalance of roads}. Since these lots-with-road take up a large amount of space, an effective strategy is to @b{use the Note feature to narrow down where they can be created}.",
+		{
+			"caption": "Example",
+			"content": [
+				"Assuming your available tiles are @t{forest_road.2s.lr} @t{forest_road.2t.dr} @t{forest_open.1.dr} @t{forest_open.2s.r} and their rotations, as well as @t{forest_open_road.l}, let's solve this Area.",
+				{
+					"field": [0, 0]
+				},
+				"Since the three roads entering the Area must be connected into a single network, we need a lot-with-road containing three lot-with-road tiles @t{forest_open_road.l}. Such an empty lot must be at least 2 × 5 cells, with its longer side vertical, as shown below.",
+				{
+					"field": [1, 0]
+				},
+				"Therefore, the required empty lot can only be created within the area marked @m{pending}.",
+				{
+					"field": [0, 1]
+				},
+				"From here, we can narrow down the possible locations further. If the empty lot included the cell @m{info}, there would be no tile that could be placed on the cell @m{unsatisfied}. Therefore, the cell @m{info} can be ruled out.",
+				{
+					"field": [0, 2]
+				},
+				"This means that an empty lot containing the cell @m{unsatisfied} can no longer have a height of five cells within the area @m{pending}. Therefore, the cell @m{unsatisfied} can also be ruled out.",
+				{
+					"field": [0, 3]
+				},
+				"Similarly, if the empty lot included the cell @m{info}, there would be no tile that could be placed on the cell @m{unsatisfied}, so the cell @m{info} can be ruled out.",
+				{
+					"field": [0, 4]
+				},
+				"The cell @m{unsatisfied}, where there is no longer enough room for a height of five cells, can also be ruled out.",
+				{
+					"field": [0, 5]
+				},
+				"Therefore, the empty lot needed to connect all the roads into a single network must include the cell @m{satisfied}.",
+				{
+					"field": [0, 6]
+				},
+				"We'll skip the remaining steps, but continuing the logical deductions completes the Area as shown.",
+				{
+					"field": [0, 7]
+				}
+			]
+		}
+	]
+}

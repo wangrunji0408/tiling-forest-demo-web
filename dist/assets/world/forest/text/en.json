@@ -1,0 +1,111 @@
+{
+	"rule": {
+		"complete_block/summary": "Complete Area @s{$1}.",
+		"complete_all_blocks/summary": "Complete all Areas. (Currently $2 / Goal $1)",
+		"block": {
+			"road": {
+				"closed": "This road cannot be connected to the other roads."
+			},
+			"stump": {
+				"gate_blocked": "A matching stump cannot be placed for this stump.",
+				"road_blocked_1": "Can't place a road in front of this stump.",
+				"road_blocked_2": "A road cannot be placed between these stumps."
+			}
+		},
+		"section": {
+			"stump": {
+				"gate_blocked": "A matching stump cannot be placed for this stump.",
+				"road_blocked_1": "Can't place a road in front of this stump.",
+				"road_blocked_2": "A road cannot be placed between these stumps."
+			},
+			"flower": {
+				"dead": "The flowers on this road have wilted.",
+				"unbloomed": "Flowers cannot bloom on this road."
+			}
+		}
+	},
+	"event": {
+		"unlock_tile": "NEW TILE!",
+		"tutorial": {
+			"1": {
+				"1": "Welcome to Tiling Forest, the demo version of Tiling Town!",
+				"2": "In this game, you complete @b{Areas}...",
+				"3": "...with your @b{tiles}. Give it a try!"
+			},
+			"2": {
+				"1": "When you complete an Area, you obtain a new tile.\nComplete the next Area with the new tile!"
+			},
+			"3": {
+				"1": "You can't complete this Area @b{now}.",
+				"2": "Refer to the @b{Guide} for what to do next."
+			},
+			"4": {
+				"1": "You can't reach this road from this Area.",
+				"2": "@b{Move the camera} and look for another road."
+			},
+			"5": {
+				"1": "You can also use @i{mouse_scroll} to select the previous or next tile."
+			},
+			"6": {
+				"1": "This concludes the tutorial.\nKeep going and complete more Areas!",
+				"2": "There's also a @b{Rules list} where you can check the various rules...",
+				"3": "...and a feature for placing @b{marks for taking notes}, so make good use of them."
+			},
+			"7": {
+				"1": "To complete the Forest, @b{how} you complete each Area also matters.",
+				"2": "If you want to restore an Area you've changed to the placement it had when you completed it,\nthe @b{Load Tile Placement} feature is useful."
+			}
+		},
+		"ending": {
+			"1": {
+				"1": "Congratulations! You've cleared Tiling Forest!",
+				"2": "But you haven't fully cleared it yet.\nComplete the remaining Areas to complete the Forest!"
+			},
+			"2": {
+				"1": "You've finally completed the Forest!\nThat concludes Tiling Forest.",
+				"2": "If you've made it this far, we're sure you'll enjoy Tiling Town as well.\nWe'd also appreciate it if you left a review for Tiling Forest and added Tiling Town to your wishlist!"
+			}
+		}
+	},
+	"section_name": {
+		"forest": "Forest"
+	},
+	"block_name": {
+		"": "Area",
+		"20d6": "N-1",
+		"644e": "N-2",
+		"ce7b": "N-3",
+		"ebf9": "N-4",
+		"115c": "N-5",
+		"3439": "N-6",
+		"ecd7": "W-1",
+		"b8f5": "W-2",
+		"5826": "W-3",
+		"03be": "W-4",
+		"57f7": "W-5",
+		"57b9": "W-6",
+		"1b34": "W-7",
+		"55e2": "C-1",
+		"4d8f": "C-2",
+		"c010": "C-3",
+		"59d7": "C-4",
+		"3230": "C-5",
+		"ab3a": "C-6",
+		"db03": "E-1",
+		"cd03": "E-2",
+		"588e": "E-3",
+		"3850": "E-4",
+		"dddc": "E-5",
+		"eb35": "E-6",
+		"026b": "E-7",
+		"9895": "E-8",
+		"82d5": "E-9",
+		"b922": "S-1",
+		"adaa": "S-2",
+		"d845": "S-3",
+		"68f8": "S-4",
+		"f871": "S-5",
+		"8550": "S-6",
+		"0868": "S-7"
+	}
+}

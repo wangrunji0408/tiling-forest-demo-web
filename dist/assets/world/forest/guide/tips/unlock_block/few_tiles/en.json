@@ -1,0 +1,49 @@
+{
+	"caption": "Make clever use of a limited set of road tiles.",
+	"content": [
+		"Early on, you don't have many tiles, so you can't connect roads the way you'd like. You need to get creative — take detours or change your starting point.",
+		"From here on, we'll assume our available tiles are @t{forest_road.2s.lr} @t{forest_road.2t.dr} @t{forest_road.2t.ul}.",
+		{
+			"caption": "Take detours",
+			"content": [
+				"Let's think how to reach the road below in this Area.",
+				{
+					"field": [0, 0]
+				},
+				"If we connect the roads via the shortest route, it would look like this, but since we don't have @t{forest_road.2t.dl}, this placement isn't possible.",
+				{
+					"field": [0, 1]
+				},
+				"By taking a detour like this and using the pre-placed road tile @t{forest_road.2t.dl}, we can connect the road.",
+				{
+					"field": [0, 2]
+				},
+				"Note that you don't necessarily have to pass through the pre-placed road tiles. For example, in this Area, you can connect the road while avoiding the bottom-right @t{forest_road.2t.ul}.",
+				{
+					"field": [1, 0]
+				}
+			]
+		},
+		{
+			"caption": "Change the starting point",
+			"content": [
+				"Let's think how to reach the road below in this Area.",
+				{
+					"field": [2, 0]
+				},
+				"To connect the road from left to bottom, we need @t{forest_road.2t.dl}, but we don't have it.",
+				{
+					"field": [2, 1]
+				},
+				"So first, connect the road from left to right, and reach the right.",
+				{
+					"field": [2, 2]
+				},
+				"Then we can connect from right to bottom and reach the road below.",
+				{
+					"field": [2, 3]
+				}
+			]
+		}
+	]
+}

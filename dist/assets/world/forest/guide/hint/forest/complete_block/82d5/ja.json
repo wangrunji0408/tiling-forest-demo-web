@@ -1,0 +1,4 @@
+[
+	"@b{道タイルを使わずに} @m{pending} のマスを埋めることはできません。\nつまり、@m{pending} のマスには必ず道が通ります。",
+	"エリア内で道が閉じてはいけないことを踏まえて、@m{info} のマスに置けるタイルを考えましょう。\n@s{hint/forest/road/closed/warning/existing/one_road}"
+]

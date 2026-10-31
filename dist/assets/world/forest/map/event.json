@@ -1,0 +1,71 @@
+[
+	{
+		"event": {
+			"type": "tutorial/tile"
+		},
+		"on": {
+			"complete_block": "ecd7"
+		}
+	},
+	{
+		"event": {
+			"type": "tutorial/guide"
+		},
+		"on": {
+			"complete_block": "b8f5"
+		}
+	},
+	{
+		"event": {
+			"type": "tutorial/camera",
+			"focus": "(18, 14)"
+		},
+		"on": {
+			"unlock_block": "4d8f"
+		}
+	},
+	{
+		"event": {
+			"type": "tutorial/palette"
+		},
+		"on": {
+			"unlock_block": "b922"
+		}
+	},
+	{
+		"event": {
+			"type": "tutorial/rule"
+		},
+		"on": {
+			"complete_block": "c010"
+		}
+	},
+	{
+		"event": {
+			"type": "tutorial/placement"
+		},
+		"on": {
+			"unlock_tile": "forest_gate.u"
+		}
+	},
+	{
+		"event": {
+			"type": "ending",
+			"phase": 0
+		},
+		"on": {
+			"complete_section": "forest",
+			"phase": 0
+		}
+	},
+	{
+		"event": {
+			"type": "ending",
+			"phase": 1
+		},
+		"on": {
+			"complete_section": "forest",
+			"phase": 1
+		}
+	}
+]

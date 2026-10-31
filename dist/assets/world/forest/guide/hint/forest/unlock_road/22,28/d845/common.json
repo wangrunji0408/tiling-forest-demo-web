@@ -1,0 +1,12 @@
+{
+	"caption": "@s{section_name/forest}: @s{block_name/} @s{block_name/d845} @s{road/dl}",
+	"content": [
+		{
+			"guide": "tips/unlock_block/few_tiles"
+		},
+		"@s{hint/unlock/possible}",
+		{
+			"field": [0, 0]
+		}
+	]
+}

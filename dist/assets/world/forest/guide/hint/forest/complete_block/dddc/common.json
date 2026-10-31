@@ -1,0 +1,81 @@
+﻿{
+	"caption": "@s{section_name/forest}: @s{block_name/} @s{block_name/dddc}",
+	"content": [
+		{
+			"summary": "@s{hint/step}{1}",
+			"open": true,
+			"details": [
+				{
+					"guide": "tips/complete_block/common/candidate_1"
+				},
+				{
+					"slot": 0
+				},
+				{
+					"if": {
+						"tile": "forest_open.1.dr"
+					},
+					"then": "@s{hint/common/useless/one_tile}{@t{forest_open.1.dr}}",
+					"else": null
+				},
+				{
+					"field": [0, 0]
+				},
+				"@s{hint/common/next/multiple_cells}"
+			]
+		},
+		{
+			"summary": "@s{hint/step}{2}",
+			"details": [
+				{
+					"guide": "tips/complete_block/common/candidate_1"
+				},
+				{
+					"slot": 1
+				},
+				{
+					"field": [0, 1]
+				},
+				"@s{hint/common/next/multiple_cells}"
+			]
+		},
+		{
+			"summary": "@s{hint/step}{3}",
+			"details": [
+				{
+					"guide": "tips/complete_block/common/candidate_1"
+				},
+				"@s{hint/common/middle/multiple_cells}",
+				{
+					"field": [0, 2]
+				},
+				"@s{hint/common/next/multiple_cells}"
+			]
+		},
+		{
+			"summary": "@s{hint/step}{4}",
+			"details": [
+				{
+					"guide": "tips/complete_block/road/closed"
+				},
+				"@s{hint/common/middle/multiple_cells}\n@s{hint/forest/road/closed/warning/existing/one_road}",
+				{
+					"field": [0, 3]
+				},
+				"@s{hint/forest/road/closed/next/one_road/multiple_cells}"
+			]
+		},
+		{
+			"summary": "@s{hint/step}{5}",
+			"details": [
+				{
+					"guide": "tips/complete_block/common/candidate_1"
+				},
+				"@s{hint/common/possible/skip/multiple_cells}",
+				{
+					"field": [0, 4]
+				}
+			]
+		}
+	]
+}

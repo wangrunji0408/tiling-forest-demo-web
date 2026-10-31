@@ -1,0 +1,6 @@
+{
+	"field": "hint/forest/field/c010",
+	"progress": [
+		{"roads":["(5,0)","(1,2)"],"sections":{"forest":{"blocks":{"c010":0}}}}
+	]
+}

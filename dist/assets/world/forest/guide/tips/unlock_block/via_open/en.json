@@ -1,0 +1,23 @@
+{
+	"caption": "Connect roads via empty lots.",
+	"content": [
+		"By using empty lots as intermediaries, you can reach roads that weren't reachable with road tiles alone.",
+		{
+			"caption": "Example",
+			"content": [
+				"Let's think how to reach the road on the right in this Area.",
+				{
+					"field": [0, 0]
+				},
+				"You can't place a road tile on the cell @m{pending} because the lot tile @T{forest_open.1.ul} at the bottom right doesn't match any road tiles.\nHowever, you can place a lot-with-road tile @t{forest_open_road.r}.",
+				{
+					"field": [0, 1]
+				},
+				"Roads that enter the same empty lot are treated as connected.\nSo, for example, if you place tiles like this, you'll be able to reach the road on the right via the empty lot.",
+				{
+					"field": [0, 2]
+				}
+			]
+		}
+	]
+}

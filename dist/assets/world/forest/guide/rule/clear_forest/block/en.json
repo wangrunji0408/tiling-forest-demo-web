@@ -1,0 +1,7 @@
+{
+	"caption": "Condition to clear the Forest: Area",
+	"content": [
+		"Locate Area @s{block_name/3439} and complete it.\nThe letter in an Area's name indicates @b{where it is located within the Forest} (North, East, West, South, or Center).",
+		"Completing @s{block_name/3439} requires a lot of tiles, so you'll need to complete some of the other Areas as well."
+	]
+}

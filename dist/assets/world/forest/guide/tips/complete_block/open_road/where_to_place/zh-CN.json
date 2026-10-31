@@ -1,0 +1,47 @@
+{
+	"caption": "缩小可以放置带道路空地的位置范围",
+	"content": [
+		"带道路空地对于@g{tips/complete_block/open_road/via_open}{制造道路分支或死胡同}以及@g{tips/complete_block/open_road/parity}{调整道路的颜色偏差}来说不可或缺。这样的带道路空地会占据较大空间，因此@b{使用笔记功能来缩小可以创建的位置范围}这一策略很有效。",
+		{
+			"caption": "例",
+			"content": [
+				"假设手头的图块为 @t{forest_road.2s.lr} @t{forest_road.2t.dr} @t{forest_open.1.dr} @t{forest_open.2s.r} 及其旋转形态，以及 @t{forest_open_road.l}，解开以下区域。",
+				{
+					"field": [0, 0]
+				},
+				"必须将进入区域的 3 条道路连接成一体，因此需要包含 3 个带道路空地图块 @t{forest_open_road.l} 的带道路空地。这样的空地最小也需要如下所示的纵向 2 × 5 格形状。",
+				{
+					"field": [1, 0]
+				},
+				"因此，能够创建所需空地的位置仅限于 @m{pending} 的范围。",
+				{
+					"field": [0, 1]
+				},
+				"接下来进一步缩小位置范围。如果在 @m{info} 的格子创建空地，那么 @m{unsatisfied} 的格子将没有可放置的图块。因此，@m{info} 的格子从候选中排除。",
+				{
+					"field": [0, 2]
+				},
+				"这样一来，包含 @m{unsatisfied} 格子的空地无法在 @m{pending} 范围内确保纵向 5 格。因此，@m{unsatisfied} 的格子也从候选中排除。",
+				{
+					"field": [0, 3]
+				},
+				"同样，如果在 @m{info} 的格子创建空地，@m{unsatisfied} 的格子将没有可放置的图块，因此 @m{info} 的格子从候选中排除。",
+				{
+					"field": [0, 4]
+				},
+				"而且，无法确保纵向 5 格的 @m{unsatisfied} 格子也从候选中排除。",
+				{
+					"field": [0, 5]
+				},
+				"综上所述，可以知道用于连接道路的空地只能在 @m{satisfied} 的格子上创建。",
+				{
+					"field": [0, 6]
+				},
+				"剩余过程省略，但推进逻辑推理后，就能像这样完成区域。",
+				{
+					"field": [0, 7]
+				}
+			]
+		}
+	]
+}

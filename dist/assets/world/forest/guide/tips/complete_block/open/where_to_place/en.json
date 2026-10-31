@@ -1,0 +1,55 @@
+{
+	"caption": "Where empty lots can be created is constrained by the surrounding tiles.",
+	"content": [
+		"Creating an empty lot strongly constrains which tiles can be placed around it. As a result, there are fewer places where empty lots can be created than you might expect.",
+		"Unless there is a tile that can fill a cell like @m{unsatisfied}, @b{you cannot create an empty lot that occupies a 3 × 3 area}. In other words, @b{the vertical or horizontal width of an empty lot must always be exactly two cells}. Keeping this in mind makes it easier to narrow down the possible shapes of empty lots.",
+		{
+			"field": [0, 0]
+		},
+		{
+			"caption": "Example",
+			"content": [
+				"Assuming the tiles in your inventory are @t{forest_road.2s.lr} @t{forest_road.2t.dr} @t{forest_open.1.dr} @t{forest_open.2s.r} @t{forest_open_road.r} and their rotations, let's solve the Area below.",
+				{
+					"field": [1, 0]
+				},
+				"First, if we focus on the cell @m{pending}, the tiles that can be placed there are either @t{forest_road.2t.dl} or @t{forest_open.1.dl}.",
+				{
+					"field": [1, 1]
+				},
+				"If you place @t{forest_open.1.dl} on the cell @m{pending}, the only tile that can be placed in the cell to the left is @t{forest_open_road.u}.",
+				{
+					"field": [1, 2]
+				},
+				"As a result, the empty lot must take the following shape, with a height of two cells, leaving no tile that can be placed on the cell @m{unsatisfied}.",
+				{
+					"field": [1, 3]
+				},
+				"Therefore, we can conclude that the tile to place on the cell @m{pending} must be @t{forest_road.2t.dl}, not @t{forest_open.1.dl}.",
+				{
+					"field": [1, 4]
+				},
+				"Next, if we focus on the cell @m{pending}, the same technique can be applied. If you place @t{forest_open.1.ur}, the empty lot can only take the following shape in order not to conflict with the road tile @t{forest_road.2t.dl} above. In this case as well, there will be no tile that can be placed on the cell @m{unsatisfied}.",
+				{
+					"field": [1, 5]
+				},
+				"Therefore, the tile to place on the cell @m{pending} must be @t{forest_road.2t.ur}.",
+				{
+					"field": [1, 6]
+				},
+				"Next, if we focus on the cell @m{pending}, @t{forest_open.1.dl} cannot be placed here. If you place @t{forest_open.1.dl}, the empty lot will take the following shape, making it impossible to fill the remaining cells.",
+				{
+					"field": [1, 7]
+				},
+				"Therefore, the tile to place on the cell @m{pending} must be @t{forest_road.2t.dl}, and the surrounding road tiles are determined as follows.",
+				{
+					"field": [1, 8]
+				},
+				"Finally, create a road dead end in the remaining space to complete the Area.",
+				{
+					"field": [1, 9]
+				}
+			]
+		}
+	]
+}

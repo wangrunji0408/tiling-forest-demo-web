@@ -1,0 +1,13 @@
+{
+	"caption": "Condition to complete the Forest: Area",
+	"content": [
+		"Complete all Areas in the Forest.",
+		{
+			"field": [0, 0]
+		},
+		"If any Areas were previously completed but are not complete now, you need to complete them again.",
+		{
+			"field": [0, 1]
+		}
+	]
+}

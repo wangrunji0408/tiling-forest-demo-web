@@ -1,0 +1,83 @@
+{
+	"name": "指南",
+	"guide": "指南使用方法",
+	"rule": {
+		"name": "规则",
+		"gameplay": "游戏流程",
+		"common": {
+			"name": "通用",
+			"tile": "放置图块时需对齐图案",
+			"open": "空地 @t{forest_open.1.dr} 是与道路 @t{forest_road.2s.lr} 不同类型的地形",
+			"open_road": "进入同一空地的道路被视为相互连接"
+		},
+		"unlock_block": {
+			"name": "解锁区域",
+			"connect": "将道路连接到未探索的道路"
+		},
+		"complete_block": {
+			"name": "完成区域",
+			"fill": "图块: 在所有格子放置图块",
+			"road": "道路: 将所有道路连接成一体",
+			"stump": "树桩: 让所有树桩发芽"
+		},
+		"clear_forest": {
+			"name": "通关森林",
+			"block": "区域: 完成区域 @s{block_name/3439}"
+		},
+		"complete_forest": {
+			"name": "完成森林",
+			"block": "区域: 完成所有区域",
+			"stump": "树桩: 让所有树桩发芽",
+			"flower": "花朵: 让所有道路开花"
+		}
+	},
+	"tips": {
+		"name": "提示",
+		"about": "关于「提示」指南",
+		"hint": "提示功能",
+		"unlock_block": {
+			"name": "解锁区域",
+			"few_tiles": "即使道路图块种类较少，也能设法连接道路",
+			"inaccessible": "调查道路无法通过的格子",
+			"via_open": "通过空地连接道路"
+		},
+		"complete_block": {
+			"name": "完成区域",
+			"common": {
+				"name": "通用",
+				"candidate_1": "关注某一格子，思考候选的可放置图块",
+				"candidate_2": "关注相邻格子，缩小候选可放置图块的范围",
+				"parity": "关注奇偶性",
+				"color_imbalance": "关注格子颜色的偏差"
+			},
+			"road": {
+				"name": "@t{forest_road.2s.lr} 道路",
+				"closed": "尽量不让道路形成封闭的道路",
+				"simple": "仅靠简单的道路图块无法制造道路分支或死胡同",
+				"parity": "简单道路经过的格子的奇偶性由起点和终点格子的颜色决定"
+			},
+			"open": {
+				"name": "@t{open.blank} 空地",
+				"fill": "放置空地，填补道路无法经过的地方",
+				"where_to_place": "可创建空地的位置受周围地形限制",
+				"parity": "空地的最外圈占据偶数个格子"
+			},
+			"open_road": {
+				"name": "@t{forest_open_road.l} 带道路空地",
+				"via_open": "将道路连接到空地，制造道路分支或死胡同",
+				"parity": "创建道路的起点和终点，调整道路颜色的偏差",
+				"where_to_place": "缩小可以放置带道路空地的位置范围"
+			},
+			"stump": {
+				"name": "@t{forest_gate.r} 树桩",
+				"where_to_place": "可放置树桩的位置受周围地形限制",
+				"parity": "树桩配对的颜色偏差为±2",
+				"beyond_block": "可以跨区域创建树桩配对"
+			}
+		},
+		"complete_forest": {
+			"name": "完成森林",
+			"approach": "重新解区域时，按周围区域较少的顺序依次考虑"
+		}
+	}
+}

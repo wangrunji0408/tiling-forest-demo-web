@@ -1,0 +1,18 @@
+{
+	"caption": "Condition to complete Areas: Road",
+	"content": [
+		"You need to connect all roads inside the Area into a single network.",
+		{
+			"field": [0, 0]
+		},
+		{
+			"caption": "Failed example",
+			"content": [
+				"Roads are split into several groups. All roads must be connected.",
+				{
+					"field": [0, 1]
+				}
+			]
+		}
+	]
+}

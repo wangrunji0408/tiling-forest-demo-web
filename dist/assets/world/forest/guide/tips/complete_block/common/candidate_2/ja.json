@@ -1,0 +1,43 @@
+{
+	"caption": "隣のマスに着目して、置けるタイルの候補を絞り込む",
+	"content": [
+		"あるマスにタイルを置くと、その隣のマスに置けるタイルが制限されます。このことを用いて、置けるタイルの候補を絞り込める場合があります。",
+		{
+			"caption": "例",
+			"content": [
+				"手持ちのタイルが @t{forest_road.2s.lr} @t{forest_road.2t.dr} @t{forest_open.1.dr} とこれらの回転であるとして、以下のエリアを解きます。",
+				{
+					"field": [0, 0]
+				},
+				"まず、@m{pending} のマスに着目してみると、このマスに置けるタイルは @t{forest_road.2s.lr} @t{forest_road.2t.dl} の 2 種類です。",
+				{
+					"field": [0, 1]
+				},
+				"もし @t{forest_road.2s.lr} を置いた場合、@m{unsatisfied} のマスに置けるタイルがなくなってしまいます。",
+				{
+					"field": [0, 2]
+				},
+				"よって、@m{pending} のマスには @t{forest_road.2t.dl} を置くことが決まりました。",
+				{
+					"field": [0, 3]
+				},
+				"次に、@m{pending} のマスに着目してみると、このマスに置けるタイルは @t{forest_road.2t.dl} @t{forest_open.1.dl} の 2 種類です。",
+				{
+					"field": [0, 4]
+				},
+				"もし @t{forest_open.1.dl} を置いた場合、@m{unsatisfied} のマスに置けるタイルがなくなってしまいます。",
+				{
+					"field": [0, 5]
+				},
+				"よって、@m{pending} のマスには @t{forest_road.2t.dl} を置くことが決まりました。",
+				{
+					"field": [0, 6]
+				},
+				"あとは、@g{tips/complete_block/common/candidate_1}{残りのマスに置けるタイルの候補}を考えていけば、エリアが完成します。",
+				{
+					"field": [0, 7]
+				}
+			]
+		}
+	]
+}

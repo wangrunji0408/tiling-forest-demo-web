@@ -1,0 +1,137 @@
+﻿{
+	"caption": "@s{section_name/forest}: @s{block_name/} @s{block_name/57b9}",
+	"content": [
+		{
+			"if": {
+				"tile": "forest_open_road.l"
+			},
+			"else": [
+				{
+					"summary": "@s{hint/step}{1}",
+					"open": true,
+					"details": [
+						{
+							"guide": "tips/complete_block/common/parity"
+						},
+						"@s{hint/forest/parity/check}",
+						{
+							"items": [
+								"@s{hint/forest/parity/road/block/true_false}",
+								"@s{hint/forest/parity/block/}{15}"
+							]
+						},
+						{
+							"field": [0, 0]
+						},
+						"@s{hint/forest/parity/next}"
+					]
+				},
+				{
+					"summary": "@s{hint/step}{2}",
+					"details": [
+						{
+							"guide": "rule/complete_block/fill"
+						},
+						"@s{hint/forest/parity/impossible/even_odd}"
+					]
+				}
+			]
+		},
+		{
+			"summary": "@s{hint/step}{1}",
+			"open": true,
+			"details": [
+				{
+					"guide": "tips/complete_block/common/color_imbalance"
+				},
+				"@s{hint/forest/color/check/block}",
+				{
+					"items": [
+						"@s{hint/forest/parity/road/block/true_false}",
+						"@s{hint/forest/color/block/}{8}{7}"
+					]
+				},
+				{
+					"field": [0, 0]
+				},
+				"@s{hint/forest/color/next}"
+			]
+		},
+		{
+			"summary": "@s{hint/step}{2}",
+			"details": [
+				{
+					"guide": "tips/complete_block/open_road/parity"
+				},
+				[
+					{
+						"if": {
+							"tile": "forest_open_road.d"
+						},
+						"else": [
+							"@s{hint/forest/open_road/color/false}\n@s{hint/forest/open_road/shape/large/0}",
+							{
+								"field": 1
+							}
+						]
+					},
+					{
+						"if": {
+							"tile": "forest_open_road.r"
+						},
+						"else": [
+							"@s{hint/forest/open_road/color/false}\n@s{hint/forest/open_road/shape/large/1}",
+							{
+								"field": 2
+							}
+						]
+					},
+					{
+						"if": {
+							"tile": "forest_open_road.u"
+						},
+						"else": [
+							"@s{hint/forest/open_road/color/false}\n@s{hint/forest/open_road/shape/large/2}",
+							{
+								"field": 3
+							}
+						],
+						"then": [
+							"@s{hint/forest/open_road/color/false}\n@s{hint/forest/open_road/shape/large/3}",
+							{
+								"field": 4
+							}
+						]
+					}
+				],
+				"@s{hint/forest/open_road/start/trivial}\n@s{hint/forest/open_road/next}"
+			]
+		},
+		{
+			"if": {
+				"tile": "forest_open_road.u"
+			},
+			"else": {
+				"summary": "@s{hint/step}{3}",
+				"details": [
+					{
+						"guide": "rule/complete_block/fill"
+					},
+					"@s{hint/forest/open_road/impossible/color}"
+				]
+			}
+		},
+		{
+			"summary": "@s{hint/step}{3}",
+			"details": [
+				{
+					"guide": "tips/complete_block/common/candidate_1"
+				},
+				"@s{hint/common/possible/skip/multiple_cells}",
+				{
+					"field": [0, 1]
+				}
+			]
+		}
+	]
+}

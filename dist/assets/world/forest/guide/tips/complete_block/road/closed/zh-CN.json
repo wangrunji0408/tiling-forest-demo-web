@@ -1,0 +1,44 @@
+{
+	"caption": "尽量不让道路形成封闭的道路",
+	"content": [
+		"将一条连续的道路无法再向任何方向延伸的状态，称为@b{封闭}的道路。",
+		"例如，以下两条道路都是封闭的。",
+		{
+			"field": [0, 0]
+		},
+		"另一方面，以下道路并未封闭。因为还可以在 @m{pending} 的位置放置道路图块。",
+		{
+			"field": [1, 0]
+		},
+		"要完成某个区域，@g{rule/complete_block/road}{必须将道路连接成一体}。因此请注意，一旦道路封闭，就无法再放置更多道路图块。",
+		{
+			"caption": "示例",
+			"content": [
+				"假设手中的图块为 @t{forest_road.2s.lr} @t{forest_road.2t.dr} @t{forest_road.2t.dl} @t{forest_road.2t.ul} @t{forest_road.2t.ur}，目标是完成以下区域。",
+				{
+					"field": [2, 0]
+				},
+				"首先，关注 @m{pending} 的格子，这里可以放置的图块有 @t{forest_road.2s.lr} 和 @t{forest_road.2t.dl} 两种。",
+				{
+					"field": [2, 1]
+				},
+				"如果放置 @t{forest_road.2t.dl}，则其下方的格子只能放置 @t{forest_road.2t.ul}，这样道路就会封闭。",
+				{
+					"field": [2, 2]
+				},
+				"即使再放置道路图块，道路也无法连接成一体，无法完成区域。因此可以判断，在 @m{pending} 的格子放置 @t{forest_road.2t.dl} 是错误的。",
+				{
+					"field": [2, 3]
+				},
+				"因此，确定在 @m{pending} 的格子放置 @t{forest_road.2s.lr}，其下方格子的图块也随之确定。",
+				{
+					"field": [2, 4]
+				},
+				"重复这样的决定方法，即可像这样完成区域。",
+				{
+					"field": [2, 5]
+				}
+			]
+		}
+	]
+}

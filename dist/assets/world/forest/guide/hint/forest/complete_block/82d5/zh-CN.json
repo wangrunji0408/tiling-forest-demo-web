@@ -1,0 +1,4 @@
+[
+	"@b{不使用道路图块}就无法填满 @m{pending} 的格子。\n也就是说，@m{pending} 的格子必定会有道路通过。",
+	"考虑到区域内道路不能封闭，来思考可以放置在 @m{info} 格子上的图块吧。\n@s{hint/forest/road/closed/warning/existing/one_road}"
+]

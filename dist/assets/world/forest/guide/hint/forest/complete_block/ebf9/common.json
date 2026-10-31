@@ -1,0 +1,34 @@
+﻿{
+	"caption": "@s{section_name/forest}: @s{block_name/} @s{block_name/ebf9}",
+	"content": [
+		{
+			"if": {
+				"tile": "forest_gate.r"
+			},
+			"then": "@s{hint/forest/omit}"
+		},
+		{
+			"summary": "@s{hint/step}{1}",
+			"open": true,
+			"details": [
+				{
+					"guide": "tips/complete_block/common/candidate_1"
+				},
+				"@s{hint/common/start/one_cell}",
+				{
+					"field": [0, 0]
+				},
+				"@s{hint/common/next/one_cell}"
+			]
+		},
+		{
+			"summary": "@s{hint/step}{2}",
+			"details": [
+				{
+					"guide": "rule/complete_block/fill"
+				},
+				"@s{hint/common/impossible/one_cell}"
+			]
+		}
+	]
+}

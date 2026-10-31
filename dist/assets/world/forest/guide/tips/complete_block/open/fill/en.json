@@ -1,0 +1,39 @@
+{
+	"caption": "Create empty lots to fill spaces where roads cannot pass.",
+	"content": [
+		"Once you have all the empty-lot corner tiles @t{forest_open.1.dr} @t{forest_open.1.dl} @t{forest_open.1.ul} @t{forest_open.1.ur}, you can create empty lots.",
+		{
+			"field": [0, 0]
+		},
+		"When you can only create roads and empty lots, @b{any space where a road cannot pass must be filled with an empty lot}.",
+		{
+			"caption": "Example",
+			"content": [
+				"Assuming your available tiles are @t{forest_road.2s.lr} @t{forest_road.2t.dr} @t{forest_open.1.dr} and their rotations, let's solve this Area.",
+				{
+					"field": [1, 0]
+				},
+				"If we focus on the cell @m{pending}, either @t{forest_road.2t.ur} or @t{forest_open.1.ur} can be placed here.",
+				{
+					"field": [1, 1]
+				},
+				"If you place @t{forest_road.2t.ur}, the road cannot get past the narrow section @m{unsatisfied}, making it impossible to @g{rule/complete_block/road}{connect all roads into a single network}.",
+				{
+					"field": [1, 2]
+				},
+				"Therefore, you have to place an empty-lot tile on the cell @m{pending} and create an empty lot as shown.",
+				{
+					"field": [1, 3]
+				},
+				"Similarly, a road cannot pass through the cell @m{pending}, so you have to create an empty lot there as well.",
+				{
+					"field": [1, 4]
+				},
+				"The remaining cells can be filled with roads, completing the Area as shown.",
+				{
+					"field": [1, 5]
+				}
+			]
+		}
+	]
+}

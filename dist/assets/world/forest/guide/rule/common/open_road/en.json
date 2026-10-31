@@ -1,0 +1,14 @@
+{
+	"caption": "Connecting roads via empty lots",
+	"content": [
+		"Roads entering the same empty lot are treated as connected.",
+		"e.g. 1: This Area meets @g{rule/complete_block/road}{the road condition to complete Areas}.",
+		{
+			"field": [0, 0]
+		},
+		"e.g. 2: This Area allows @g{rule/unlock_block/connect}{access to unreached road} via the empty lot.",
+		{
+			"field": [1, 0]
+		}
+	]
+}

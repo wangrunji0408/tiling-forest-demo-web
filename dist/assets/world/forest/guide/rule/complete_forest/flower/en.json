@@ -1,0 +1,22 @@
+{
+	"caption": "Condition to complete the Forest: Flower",
+	"content": [
+		"Make flowers bloom on all roads.\nEach road separated by empty lots blooms when it is sandwiched between @b{exactly one pair of sprouted stumps}.",
+		{
+			"field": [0, 0]
+		},
+		{
+			"caption": "Failed examples",
+			"content": [
+				"If a road isn't sandwiched between a pair of stumps, the condition isn't met.",
+				{
+					"field": [0, 1]
+				},
+				"If two or more pairs of stumps sandwich the same road, the flowers wilt and the condition isn't met.",
+				{
+					"field": [0, 2]
+				}
+			]
+		}
+	]
+}

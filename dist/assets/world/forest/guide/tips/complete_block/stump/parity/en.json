@@ -1,0 +1,26 @@
+{
+	"caption": "The color imbalance of a stump pair is ±2.",
+	"content": [
+		"A pair of stumps is always placed on cells with the same @g{tips/complete_block/common/parity}{parity}. Therefore, the color imbalance of a stump pair is +2 if both stumps are on @m{true}, and -2 if both are on @m{false}.",
+		{
+			"field": [0, 0]
+		},
+		{
+			"caption": "Example",
+			"content": [
+				"Let's think about how to re-solve this Area so as to @g{rule/complete_forest/flower}{make flowers bloom on all roads}.",
+				{
+					"field": [1, 0]
+				},
+				"For example, if you form a stump pair as follows, the color imbalance of this stump pair is -2. As a result, you need to create another terrain with a color imbalance of +2 to compensate for the mismatch in color imbalance.",
+				{
+					"field": [1, 1]
+				},
+				"There is not enough room to draw two roads with a color imbalance of +1, so instead you need to create a stump pair with a color imbalance of +2. To avoid wilting the flowers, you need to split the road with an empty lot so that each stump pair is on a separate road, which leads to the tile placement shown as follows.",
+				{
+					"field": [1, 2]
+				}
+			]
+		}
+	]
+}

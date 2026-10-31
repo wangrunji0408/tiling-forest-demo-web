@@ -1,0 +1,55 @@
+{
+	"caption": "可创建空地的位置受周围地形限制",
+	"content": [
+		"创建空地后，其周围可放置的图块会受到严重限制。因此，能够创建空地的地方意外地少。",
+		"另外，除非有能够填补 @m{unsatisfied} 之类格子的图块，否则@b{无法创建占据 3 × 3 格子的空地}。换句话说，@b{空地的纵向或横向宽度必定为 2 格}。了解这一点，在缩小空地形状的候选范围时会更清晰。",
+		{
+			"field": [0, 0]
+		},
+		{
+			"caption": "示例",
+			"content": [
+				"假设手中的图块为 @t{forest_road.2s.lr} @t{forest_road.2t.dr} @t{forest_open.1.dr} @t{forest_open.2s.r} @t{forest_open_road.r} 以及它们的旋转形态，目标是完成以下区域。",
+				{
+					"field": [1, 0]
+				},
+				"首先，关注 @m{pending} 的格子，这里可以放置的图块是 @t{forest_road.2t.dl} 或 @t{forest_open.1.dl} 中的一种。",
+				{
+					"field": [1, 1]
+				},
+				"如果在 @m{pending} 的格子放置 @t{forest_open.1.dl}，则左边的格子只能放置 @t{forest_open_road.u}。",
+				{
+					"field": [1, 2]
+				},
+				"于是，空地会变成这种纵向宽度为 2 格的形状，导致 @m{unsatisfied} 的格子没有可放置的图块。",
+				{
+					"field": [1, 3]
+				},
+				"因此，决定在 @m{pending} 的格子放置 @t{forest_road.2t.dl}，而不是 @t{forest_open.1.dl}。",
+				{
+					"field": [1, 4]
+				},
+				"接下来关注 @m{pending} 的格子，可以使用同样的技巧。如果放置 @t{forest_open.1.ur}，为了不与上方的道路 @t{forest_road.2t.dl} 冲突，空地只能变成这种形状。此时，@m{unsatisfied} 的格子将没有可放置的图块。",
+				{
+					"field": [1, 5]
+				},
+				"因此，决定在 @m{pending} 的格子放置 @t{forest_road.2t.ur}。",
+				{
+					"field": [1, 6]
+				},
+				"接下来关注 @m{pending} 的格子，这里不能放置 @t{forest_open.1.dl}。如果放置 @t{forest_open.1.dl}，空地会变成这样，无法妥善填充剩余的格子。",
+				{
+					"field": [1, 7]
+				},
+				"因此，决定在 @m{pending} 的格子放置 @t{forest_road.2t.dl}，周围的道路图块也这样确定。",
+				{
+					"field": [1, 8]
+				},
+				"最后，在剩余的空间中制造道路的死胡同，即可完成区域。",
+				{
+					"field": [1, 9]
+				}
+			]
+		}
+	]
+}

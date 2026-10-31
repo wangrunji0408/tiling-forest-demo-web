@@ -1,0 +1,9 @@
+{
+	"field": "hint/forest/field/db03",
+	"progress": [
+		{"roads":["(3,3)"],"sections":{"forest":{"blocks":{"db03":0}}},"tiles":[{"mark":"pending","pos":"(8,1)"},{"mark":"pending","pos":"(7,2)"}]},
+		{"roads":["(3,3)"],"sections":{"forest":{"blocks":{"db03":0}}},"tiles":[{"mark":"unsatisfied","pos":"(8,1)"},{"mark":"unsatisfied","pos":"(7,2)"}]},
+		{"roads":["(3,3)"],"sections":{"forest":{"blocks":{"db03":0}}},"tiles":[{"mark":"pending","pos":"(6,2)"},{"mark":"pending","pos":"(7,2)"}]},
+		{"roads":["(3,3)"],"sections":{"forest":{"blocks":{"db03":0}}},"tiles":[{"mark":"unsatisfied","pos":"(6,2)"},{"mark":"unsatisfied","pos":"(7,2)"},{"mark":"info","pos":"(3,3)"}]}
+	]
+}

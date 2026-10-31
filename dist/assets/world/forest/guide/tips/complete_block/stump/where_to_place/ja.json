@@ -1,0 +1,80 @@
+{
+	"caption": "切り株タイルの使い方",
+	"content": [
+		"切り株タイル @t{forest_gate.r} によって、エリアの埋め方の可能性はぐっと広がります。しかし、@g{rule/complete_block/stump}{エリア完成の条件}を満たすとなると、その置き方は意外と限られます。",
+		{
+			"caption": "例 1",
+			"content": [
+				"手持ちのタイルが @t{forest_road.2s.lr} @t{forest_road.2t.dr} @t{forest_open.1.dr} @t{forest_open.2s.r} @t{forest_open_road.r} @t{forest_gate.r} とこれらの回転であるとして、以下のエリアを解きます。",
+				{
+					"field": [0, 0]
+				},
+				"まず、@m{pending} のマスに着目すると、ここに置けるタイルは @t{forest_road.2t.ur} @t{forest_open.1.ur} および切り株タイル @t{forest_gate.r} @t{forest_gate.d} @t{forest_gate.l} @t{forest_gate.u} のどれかです。しかし、@g{tips/complete_block/common/candidate_2}{周囲に置けるタイルの候補を考えると} @t{forest_road.2t.ur} @t{forest_open.1.ur} は置けないため、切り株タイルを置くしかないとわかります。",
+				{
+					"field": [0, 1]
+				},
+				"また、切り株は間を 1 マス空けた向かい合わせのペアを作る必要があります。例えばここに右向きの切り株タイル @t{forest_gate.r} を置いてしまうと、2 マス先のタイル @t{forest_open.1.ul} が邪魔でペアが作れません。",
+				{
+					"field": [0, 2]
+				},
+				"結局、@m{pending} のマスに置けるタイルは上向きの切り株タイル @t{forest_gate.u} しかなく、このように切り株のペアを作って道を伸ばすことになります。",
+				{
+					"field": [0, 3]
+				},
+				"さて、次は @m{pending} のマスに着目すると、ここに置けるタイルは @t{forest_road.2t.dl} @t{forest_open.1.dl} および切り株タイル @t{forest_gate.r} @t{forest_gate.d} @t{forest_gate.l} @t{forest_gate.u} のどれかです。しかし、このうち実際に置けるタイルは @t{forest_road.2t.dl} しかありません。例えば下向きの切り株タイル @t{forest_gate.d} を置いてしまうと、2 マス先に切り株を置けはするものの、切り株の間 @m{unsatisfied} に道を通すことができません。",
+				{
+					"field": [0, 4]
+				},
+				"残りのマスについても同様に考えていけば、このようにエリアが完成します。",
+				{
+					"field": [0, 5]
+				}
+			]
+		},
+		{
+			"caption": "例 2",
+			"content": [
+				"手持ちのタイルが @t{forest_road.2s.lr} @t{forest_road.2t.dr} @t{forest_open.1.dr} @t{forest_open.2s.r} @t{forest_open_road.r} @t{forest_gate.r} とこれらの回転であるとして、以下のエリアを解きます。",
+				{
+					"field": [1, 0]
+				},
+				"@g{tips/complete_block/open_road/where_to_place}{道つき空き地のとき}と同様に、@b{メモ機能を使って切り株を作るマスを絞り込む}こともできます。\nいったんすべてのマスに @m{pending} マークをつけておいて、切り株タイルが置けないとわかったマスのマークを消していきましょう。",
+				{
+					"field": [1, 1]
+				},
+				"まず、道が入ってきているマス @m{unsatisfied} には切り株タイルが置けません。",
+				{
+					"field": [1, 2]
+				},
+				"また、@m{info} のマスに切り株タイルを置いた場合、隣のマス @m{unsatisfied} に置けるタイルがなくなってしまいます。",
+				{
+					"field": [1, 3]
+				},
+				"同じ理由で、@m{unsatisfied} のマスはいずれも切り株タイルが置けません。",
+				{
+					"field": [1, 4]
+				},
+				"すると、@m{info} のマスに切り株タイルを置いた場合、上下左右どの方向にもペアとなる切り株が作れない（2 つ先のマスに @m{pending} マークがついていない）ことがわかります。",
+				{
+					"field": [1, 5]
+				},
+				"こうして絞り込みを続けていくと、@m{pending} のマスが候補として残ります。",
+				{
+					"field": [1, 6]
+				},
+				"@b{@m{pending} マークがついていないマスには切り株タイルが置けない}ので、これをもとに切り株以外の理詰めを進めることができます。",
+				{
+					"field": [1, 7]
+				},
+				"結局、以下のように切り株のペアを作ることが決まりました。",
+				{
+					"field": [1, 8]
+				},
+				"残りの過程は省略しますが、理詰めを進めていくと、このようにエリアが完成します。",
+				{
+					"field": [1, 9]
+				}
+			]
+		}
+	]
+}

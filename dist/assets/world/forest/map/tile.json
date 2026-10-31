@@ -1,0 +1,445 @@
+{
+	"forest": {
+		"blank": {
+			"sprite": "forest_open:0,0",
+			"side": { "u": "forest", "d": "forest", "l": "forest", "r": "forest" }
+		},
+		"tree": {
+			"sprite": { "texture": "forest_open:0,0", "objects": ["forest_small_tree:0,1", "forest_small_tree:0,0"] },
+			"side": { "u": "forest", "d": "forest", "l": "forest", "r": "forest" }
+		}
+	},
+
+	"forest_gate": {
+		"u": {
+			"property": {
+				"id": "flower",
+				"type": "gate",
+				"path": "road",
+				"dir": "u"
+			},
+			"sprites": {
+				"": "forest_gate:3,0",
+				".formed": "forest_gate:3,1"
+			},
+			"side": { "u": "forest", "d": "forest", "l": "forest", "r": "forest" }
+		},
+		"d": {
+			"property": {
+				"id": "flower",
+				"type": "gate",
+				"path": "road",
+				"dir": "d"
+			},
+			"sprites": {
+				"": "forest_gate:1,0",
+				".formed": "forest_gate:1,1"
+			},
+			"side": { "u": "forest", "d": "forest", "l": "forest", "r": "forest" }
+		},
+		"l": {
+			"property": {
+				"id": "flower",
+				"type": "gate",
+				"path": "road",
+				"dir": "l"
+			},
+			"sprites": {
+				"": "forest_gate:2,0",
+				".formed": "forest_gate:2,1"
+			},
+			"side": { "u": "forest", "d": "forest", "l": "forest", "r": "forest" }
+		},
+		"r": {
+			"property": {
+				"id": "flower",
+				"type": "gate",
+				"path": "road",
+				"dir": "r"
+			},
+			"sprites": {
+				"": "forest_gate:0,0",
+				".formed": "forest_gate:0,1"
+			},
+			"side": { "u": "forest", "d": "forest", "l": "forest", "r": "forest" }
+		}
+	},
+
+	"forest_road.1": {
+		"u": {
+			"property": {
+				"id": "flower",
+				"type": "gate.unique",
+				"path": "road"
+			},
+			"sprites": {
+				"": "forest_road:0,3",
+				".unique": { "texture": "forest_road:0,3", "object": "forest_road_flower:1,0" },
+				".nonunique": { "texture": "forest_road:0,3", "object": "forest_road_flower:1,1" }
+			},
+			"side": { "u": "forest", "d": "forest", "l": "forest", "r": "forest" },
+			"path": { "u": "road" }
+		},
+		"d": {
+			"property": {
+				"id": "flower",
+				"type": "gate.unique",
+				"path": "road"
+			},
+			"sprites": {
+				"": "forest_road:0,1",
+				".unique": { "texture": "forest_road:0,1", "object": "forest_road_flower:2,0" },
+				".nonunique": { "texture": "forest_road:0,1", "object": "forest_road_flower:2,1" }
+			},
+			"side": { "u": "forest", "d": "forest", "l": "forest", "r": "forest" },
+			"path": { "d": "road" }
+		},
+		"l": {
+			"property": {
+				"id": "flower",
+				"type": "gate.unique",
+				"path": "road"
+			},
+			"sprites": {
+				"": "forest_road:3,0",
+				".unique": { "texture": "forest_road:3,0", "object": "forest_road_flower:3,0" },
+				".nonunique": { "texture": "forest_road:3,0", "object": "forest_road_flower:3,1" }
+			},
+			"side": { "u": "forest", "d": "forest", "l": "forest", "r": "forest" },
+			"path": { "l": "road" }
+		},
+		"r": {
+			"property": {
+				"id": "flower",
+				"type": "gate.unique",
+				"path": "road"
+			},
+			"sprites": {
+				"": "forest_road:1,0",
+				".unique": { "texture": "forest_road:1,0", "object": "forest_road_flower:4,0" },
+				".nonunique": { "texture": "forest_road:1,0", "object": "forest_road_flower:4,1" }
+			},
+			"side": { "u": "forest", "d": "forest", "l": "forest", "r": "forest" },
+			"path": { "r": "road" }
+		}
+	},
+	"forest_road.2s": {
+		"ud": {
+			"property": {
+				"id": "flower",
+				"type": "gate.unique",
+				"path": "road"
+			},
+			"sprites": {
+				"": "forest_road:0,2",
+				".unique": { "texture": "forest_road:0,2", "object": "forest_road_flower:0,0" },
+				".nonunique": { "texture": "forest_road:0,2", "object": "forest_road_flower:0,1" }
+			},
+			"side": { "u": "forest", "d": "forest", "l": "forest", "r": "forest" },
+			"path": { "u": "road", "d": "road" }
+		},
+		"lr": {
+			"property": {
+				"id": "flower",
+				"type": "gate.unique",
+				"path": "road"
+			},
+			"sprites": {
+				"": "forest_road:2,0",
+				".unique": { "texture": "forest_road:2,0", "object": "forest_road_flower:0,0" },
+				".nonunique": { "texture": "forest_road:2,0", "object": "forest_road_flower:0,1" }
+			},
+			"side": { "u": "forest", "d": "forest", "l": "forest", "r": "forest" },
+			"path": { "l": "road", "r": "road" }
+		}
+	},
+	"forest_road.2t": {
+		"ul": {
+			"property": {
+				"id": "flower",
+				"type": "gate.unique",
+				"path": "road"
+			},
+			"sprites": {
+				"": "forest_road:3,3",
+				".unique": { "texture": "forest_road:3,3", "object": "forest_road_flower:0,0" },
+				".nonunique": { "texture": "forest_road:3,3", "object": "forest_road_flower:0,1" }
+			},
+			"side": { "u": "forest", "d": "forest", "l": "forest", "r": "forest" },
+			"path": { "u": "road", "l": "road" }
+		},
+		"ur": {
+			"property": {
+				"id": "flower",
+				"type": "gate.unique",
+				"path": "road"
+			},
+			"sprites": {
+				"": "forest_road:1,3",
+				".unique": { "texture": "forest_road:1,3", "object": "forest_road_flower:0,0" },
+				".nonunique": { "texture": "forest_road:1,3", "object": "forest_road_flower:0,1" }
+			},
+			"side": { "u": "forest", "d": "forest", "l": "forest", "r": "forest" },
+			"path": { "u": "road", "r": "road" }
+		},
+		"dl": {
+			"property": {
+				"id": "flower",
+				"type": "gate.unique",
+				"path": "road"
+			},
+			"sprites": {
+				"": "forest_road:3,1",
+				".unique": { "texture": "forest_road:3,1", "object": "forest_road_flower:0,0" },
+				".nonunique": { "texture": "forest_road:3,1", "object": "forest_road_flower:0,1" }
+			},
+			"side": { "u": "forest", "d": "forest", "l": "forest", "r": "forest" },
+			"path": { "d": "road", "l": "road" }
+		},
+		"dr": {
+			"property": {
+				"id": "flower",
+				"type": "gate.unique",
+				"path": "road"
+			},
+			"sprites": {
+				"": "forest_road:1,1",
+				".unique": { "texture": "forest_road:1,1", "object": "forest_road_flower:0,0" },
+				".nonunique": { "texture": "forest_road:1,1", "object": "forest_road_flower:0,1" }
+			},
+			"side": { "u": "forest", "d": "forest", "l": "forest", "r": "forest" },
+			"path": { "d": "road", "r": "road" }
+		}
+	},
+	"forest_road.3": {
+		"dlr": {
+			"property": {
+				"id": "flower",
+				"type": "gate.unique",
+				"path": "road"
+			},
+			"sprites": {
+				"": "forest_road:2,1",
+				".unique": { "texture": "forest_open_road:2,1", "object": "forest_road_flower:0,0" },
+				".nonunique": { "texture": "forest_open_road:2,1", "object": "forest_road_flower:0,1" }
+			},
+			"side": { "u": "forest", "d": "forest", "l": "forest", "r": "forest" },
+			"path": { "d": "road", "l": "road", "r": "road" }
+		}
+	},
+
+	"open": {
+		"blank": {
+			"sprite": "forest_open:2,0",
+			"side": { "u": "open", "d": "open", "l": "open", "r": "open" },
+			"path": { "u": "road*", "d": "road*", "l": "road*", "r": "road*" }
+		}
+	},
+
+	"forest_open.1": {
+		"ul": {
+			"sprite": "forest_open:1,2",
+			"side": { "u": "open_forest", "d": "forest", "l": "open_forest", "r": "forest" },
+			"path": { "u": "road*", "l": "road*" }
+		},
+		"ur": {
+			"sprite": "forest_open:2,3",
+			"side": { "u": "forest_open", "d": "forest", "l": "forest", "r": "open_forest" },
+			"path": { "u": "road*", "r": "road*" }
+		},
+		"dl": {
+			"sprite": "forest_open:1,3",
+			"side": { "u": "forest", "d": "open_forest", "l": "forest_open", "r": "forest" },
+			"path": { "d": "road*", "l": "road*" }
+		},
+		"dr": {
+			"sprite": "forest_open:2,2",
+			"side": { "u": "forest", "d": "forest_open", "l": "forest", "r": "forest_open" },
+			"path": { "d": "road*", "r": "road*" }
+		}
+	},
+	"forest_open.2s": {
+		"u": {
+			"sprite": "forest_open:2,1",
+			"side": { "u": "open", "d": "forest", "l": "open_forest", "r": "open_forest" },
+			"path": { "u": "road*", "l": "road*", "r": "road*" }
+		},
+		"d": {
+			"sprite": "forest_open:0,1",
+			"side": { "u": "forest", "d": "open", "l": "forest_open", "r": "forest_open" },
+			"path": { "d": "road*", "l": "road*", "r": "road*" }
+		},
+		"l": {
+			"sprite": "forest_open:3,0",
+			"side": { "u": "open_forest", "d": "open_forest", "l": "open", "r": "forest" },
+			"path": { "u": "road*", "d": "road*", "l": "road*" }
+		},
+		"r": {
+			"sprite": "forest_open:1,0",
+			"side": { "u": "forest_open", "d": "forest_open", "l": "forest", "r": "open" },
+			"path": { "u": "road*", "d": "road*", "r": "road*" }
+		}
+	},
+
+	"forest_open_road": {
+		"u": {
+			"baseTile": "forest_open.2s.d",
+			"property": {
+				"id": "flower",
+				"type": "gate.unique",
+				"path": "road"
+			},
+			"sprites": {
+				"": "forest_open_road:1,0",
+				".unique": { "texture": "forest_open_road:1,0", "object": "forest_road_flower:1,0" },
+				".nonunique": { "texture": "forest_open_road:1,0", "object": "forest_road_flower:1,1" }
+			},
+			"side": { "u": "forest", "d": "open", "l": "forest_open", "r": "forest_open" },
+			"path": { "u": "road", "d": "road*", "l": "road*", "r": "road*" }
+		},
+		"d": {
+			"baseTile": "forest_open.2s.u",
+			"property": {
+				"id": "flower",
+				"type": "gate.unique",
+				"path": "road"
+			},
+			"sprites": {
+				"": "forest_open_road:1,2",
+				".unique": { "texture": "forest_open_road:1,2", "object": "forest_road_flower:2,0" },
+				".nonunique": { "texture": "forest_open_road:1,2", "object": "forest_road_flower:2,1" }
+			},
+			"side": { "u": "open", "d": "forest", "l": "open_forest", "r": "open_forest" },
+			"path": { "u": "road*", "d": "road", "l": "road*", "r": "road*" }
+		},
+		"l": {
+			"baseTile": "forest_open.2s.r",
+			"property": {
+				"id": "flower",
+				"type": "gate.unique",
+				"path": "road"
+			},
+			"sprites": {
+				"": "forest_open_road:0,1",
+				".unique": { "texture": "forest_open_road:0,1", "object": "forest_road_flower:3,0" },
+				".nonunique": { "texture": "forest_open_road:0,1", "object": "forest_road_flower:3,1" }
+			},
+			"side": { "u": "forest_open", "d": "forest_open", "l": "forest", "r": "open" },
+			"path": { "u": "road*", "d": "road*", "l": "road", "r": "road*" }
+		},
+		"r": {
+			"baseTile": "forest_open.2s.l",
+			"property": {
+				"id": "flower",
+				"type": "gate.unique",
+				"path": "road"
+			},
+			"sprites": {
+				"": "forest_open_road:2,1",
+				".unique": { "texture": "forest_open_road:2,1", "object": "forest_road_flower:4,0" },
+				".nonunique": { "texture": "forest_open_road:2,1", "object": "forest_road_flower:4,1" }
+			},
+			"side": { "u": "open_forest", "d": "open_forest", "l": "open", "r": "forest" },
+			"path": { "u": "road*", "d": "road*", "l": "road*", "r": "road" }
+		}
+	},
+
+	"sky": {
+		"blank": {
+			"sprite": "forest_tree:3,3",
+			"side": { "u": "sky", "d": "sky", "l": "sky", "r": "sky" }
+		}
+	},
+
+	"forest_sky.2": {
+		"u": {
+			"sprite": "forest_tree:0,3",
+			"side": { "u": "sky", "d": "forest", "l": "sky_forest", "r": "sky_forest" }
+		}
+	},
+
+	"forest_tree": {
+		"1": {
+			"sprite": "forest_tree:0,0",
+			"side": { "u": "sky", "d": "t.1", "l": "sky", "r": "t.1" }
+		},
+		"2": {
+			"sprite": "forest_tree:1,0",
+			"side": { "u": "sky", "d": "t.2", "l": "t.1", "r": "t.2" }
+		},
+		"3": {
+			"sprite": "forest_tree:2,0",
+			"side": { "u": "sky", "d": "t.3", "l": "t.2", "r": "t.3" }
+		},
+		"4": {
+			"sprite": "forest_tree:3,0",
+			"side": { "u": "sky", "d": "t.4", "l": "t.3", "r": "sky" }
+		},
+		"5": {
+			"sprite": "forest_tree:0,1",
+			"side": { "u": "t.1", "d": "t.5", "l": "sky", "r": "t.4" }
+		},
+		"6": {
+			"sprite": "forest_tree:1,1",
+			"side": { "u": "t.2", "d": "t.6", "l": "t.4", "r": "t.5" }
+		},
+		"7": {
+			"sprite": "forest_tree:2,1",
+			"side": { "u": "t.3", "d": "t.7", "l": "t.5", "r": "t.6" }
+		},
+		"8": {
+			"sprite": "forest_tree:3,1",
+			"side": { "u": "t.4", "d": "t.8", "l": "t.6", "r": "sky" }
+		},
+		"9": {
+			"sprite": "forest_tree:0,2",
+			"side": { "u": "t.5", "d": "sky", "l": "sky", "r": "t.7" }
+		},
+		"10": {
+			"sprite": "forest_tree:1,2",
+			"side": { "u": "t.6", "d": "t.9", "l": "t.7", "r": "t.8" }
+		},
+		"11": {
+			"sprite": "forest_tree:2,2",
+			"side": { "u": "t.7", "d": "t.10", "l": "t.8", "r": "t.9" }
+		},
+		"12": {
+			"sprite": "forest_tree:3,2",
+			"side": { "u": "t.8", "d": "sky", "l": "t.9", "r": "sky" }
+		},
+		"13": {
+			"sprite": "forest_tree:1,3",
+			"side": { "u": "t.9", "d": "forest", "l": "sky_forest", "r": "t.10" }
+		},
+		"14": {
+			"sprite": "forest_tree:2,3",
+			"side": { "u": "t.10", "d": "forest", "l": "t.10", "r": "sky_forest" }
+		}
+	},
+
+	"example": {
+		"blank": {
+			"sprite": "example_block:0,0",
+			"side": { "u": "example", "d": "example", "l": "example", "r": "example" }
+		}
+	},
+
+	"example_block.1": {
+		"u": {
+			"sprite": "example_block:2,1",
+			"side": { "u": "example_block", "d": "example", "l": "example", "r": "example" }
+		},
+		"d": {
+			"sprite": "example_block:2,0",
+			"side": { "u": "example", "d": "example_block", "l": "example", "r": "example" }
+		},
+		"l": {
+			"sprite": "example_block:1,1",
+			"side": { "u": "example", "d": "example", "l": "example_block", "r": "example" }
+		},
+		"r": {
+			"sprite": "example_block:0,1",
+			"side": { "u": "example", "d": "example", "l": "example", "r": "example_block" }
+		}
+	}
+}

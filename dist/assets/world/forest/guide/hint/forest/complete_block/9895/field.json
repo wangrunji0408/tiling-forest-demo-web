@@ -1,0 +1,9 @@
+{
+	"field": "hint/forest/field/9895",
+	"progress": [
+		{"roads":["(3,0)","(7,2)"],"sections":{"forest":{"blocks":{"9895":0}}},"tiles":[{"mark":"info","pos":"(2,2)"}]},
+		{"roads":["(3,0)","(7,2)"],"sections":{"forest":{"blocks":{"9895":0}}},"tiles":[{"mark":"info","pos":"(2,2)"},{"mark":"info","pos":"(2,3)"}]},
+		{"roads":["(3,0)","(7,2)"],"sections":{"forest":{"blocks":{"9895":0}}},"tiles":[{"mark":"info","pos":"(3,1)"},{"pos":"(2,2)","tile":"forest_open.2s.r"},{"mark":"info","pos":"(3,2)"},{"pos":"(2,3)","tile":"forest_open.1.ur"},{"mark":"info","pos":"(3,3)"}]},
+		{"roads":["(3,0)","(7,2)"],"sections":{"forest":{"blocks":{"9895":0}}},"tiles":[{"pos":"(3,1)","tile":"forest_open.1.dl"},{"pos":"(2,2)","tile":"forest_open.2s.r"},{"pos":"(3,2)","tile":"forest_open.2s.l"},{"pos":"(2,3)","tile":"forest_open.1.ur"},{"pos":"(3,3)","tile":"forest_open.1.ul"}]}
+	]
+}

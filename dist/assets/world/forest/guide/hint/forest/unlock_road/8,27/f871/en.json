@@ -1,0 +1,5 @@
+[
+	"First, connect @i{road_locker} to @m{info} with a road.",
+	"If @b{you've completed this connection but still want another hint}, continue to the next hint.",
+	"Now, connect the cells @m{info} to each other with roads to complete the connection to @i{road_locker}."
+]

@@ -1,0 +1,197 @@
+﻿{
+	"caption": "@s{section_name/forest}: @s{block_name/} @s{block_name/3230}",
+	"content": [
+		{
+			"if": {
+				"tile": "forest_open.2s.u"
+			},
+			"else": [
+				{
+					"summary": "@s{hint/step}{1}",
+					"open": true,
+					"details": [
+						{
+							"guide": "tips/complete_block/common/candidate_1"
+						},
+						"@s{hint/common/start/one_cell}",
+						{
+							"if": {
+								"tile": "forest_open.2s.d"
+							},
+							"else": {
+								"field": [0, 0]
+							},
+							"then": {
+								"field": [0, 1]
+							}
+						},
+						{
+							"if": {
+								"tile": "forest_open.1.dr"
+							},
+							"else": "@s{hint/forest/open/unknown}",
+							"then": null
+						},
+						"@s{hint/common/next/one_cell}"
+					]
+				},
+				{
+					"summary": "@s{hint/step}{2}",
+					"details": [
+						{
+							"guide": "rule/complete_block/fill"
+						},
+						"@s{hint/common/impossible/one_cell}"
+					]
+				}
+			]
+		},
+		{
+			"if": {
+				"tile": "forest_open_road.l"
+			},
+			"else": [
+				{
+					"summary": "@s{hint/step}{1}",
+					"open": true,
+					"details": [
+						{
+							"guide": "tips/complete_block/road/simple"
+						},
+						"@s{hint/forest/road/simple/start/multiple_roads}{4}",
+						{
+							"field": [0, 2]
+						},
+						"@s{hint/forest/road/simple/next/multiple_roads}"
+					]
+				},
+				{
+					"summary": "@s{hint/step}{2}",
+					"details": [
+						{
+							"guide": "rule/complete_block/road"
+						},
+						"@s{hint/forest/road/simple/impossible/multiple_roads}"
+					]
+				}
+			]
+		},
+		{
+			"if": {
+				"tile": "forest_open_road.u"
+			},
+			"else": [
+				{
+					"summary": "@s{hint/step}{1}",
+					"open": true,
+					"details": [
+						{
+							"guide": "tips/complete_block/common/candidate_1"
+						},
+						"@s{hint/common/start/multiple_cells}",
+						{
+							"field": [0, 3]
+						},
+						"@s{hint/common/next/multiple_cells}"
+					]
+				},
+				{
+					"summary": "@s{hint/step}{2}",
+					"details": [
+						{
+							"guide": "tips/complete_block/common/candidate_1"
+						},
+						"@s{hint/common/middle/multiple_cells}",
+						{
+							"field": [0, 4]
+						},
+						"@s{hint/common/next/multiple_cells}"
+					]
+				},
+				{
+					"summary": "@s{hint/step}{3}",
+					"details": [
+						{
+							"guide": "rule/complete_block/fill"
+						},
+						"@s{hint/common/impossible/multiple_cells}"
+					]
+				}
+			]
+		},
+		{
+			"summary": "@s{hint/step}{1}",
+			"open": true,
+			"details": [
+				{
+					"guide": "tips/complete_block/common/candidate_2"
+				},
+				"@s{hint/common/start/one_cell}\n@s{hint/common/limited/multiple_cells}",
+				{
+					"field": [0, 5]
+				},
+				"@s{hint/common/next/one_cell}"
+			]
+		},
+		{
+			"summary": "@s{hint/step}{2}",
+			"details": [
+				{
+					"guide": "tips/complete_block/common/candidate_1"
+				},
+				"@s{hint/common/middle/multiple_cells}",
+				{
+					"field": [0, 6]
+				},
+				"@s{hint/common/next/multiple_cells}"
+			]
+		},
+		{
+			"summary": "@s{hint/step}{3}",
+			"details": [
+				{
+					"guide": "tips/complete_block/common/candidate_1"
+				},
+				{
+					"guide": "tips/complete_block/common/candidate_2"
+				},
+				"@s{hint/common/middle/multiple_cells}\n@s{hint/common/limited/multiple_cells}",
+				{
+					"field": [0, 7]
+				},
+				"@s{hint/common/next/multiple_cells}"
+			]
+		},
+		{
+			"summary": "@s{hint/step}{4}",
+			"details": [
+				{
+					"guide": "tips/complete_block/common/candidate_1"
+				},
+				{
+					"guide": "tips/complete_block/common/candidate_2"
+				},
+				"@s{hint/common/middle/multiple_cells}",
+				{
+					"field": [0, 8]
+				},
+				"@s{hint/common/next/multiple_cells}"
+			]
+		},
+		{
+			"summary": "@s{hint/step}{5}",
+			"details": [
+				{
+					"guide": "tips/complete_block/common/candidate_1"
+				},
+				{
+					"guide": "tips/complete_block/common/candidate_2"
+				},
+				"@s{hint/common/possible/skip/multiple_cells}",
+				{
+					"field": [0, 9]
+				}
+			]
+		}
+	]
+}

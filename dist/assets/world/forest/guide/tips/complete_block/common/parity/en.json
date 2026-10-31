@@ -1,0 +1,112 @@
+﻿{
+	"caption": "Focus on the parity.",
+	"content": [
+		"We call @b{a pair of states that can be switched between by an operation} a @b{parity}.",
+		{
+			"parity": ["State 1", "State 2", "Operation"]
+		},
+		"Parity is an important concept that is useful in many kinds of puzzle games.\nThis page introduces some examples of parity and shows how it can be used to solve puzzles.",
+		{
+			"caption": "Examples of parity",
+			"content": [
+				{
+					"items": "The @b{two sides} of a coin form a parity: flipping the coin switches between them."
+				},
+				{
+					"parity": ["Heads", "Tails", "Flip"]
+				},
+				{
+					"items": "The @b{on and off states} of a switch form a parity: toggling the switch switches between them."
+				},
+				{
+					"parity": ["On", "Off", "Toggle"]
+				},
+				{
+					"items": "@b{Whether a number is even or odd} forms a parity: adding 1 switches between the two states."
+				},
+				{
+					"parity": ["Even", "Odd", "Add 1"]
+				},
+				{
+					"items": "The @b{colors} of cells colored in two colors as shown below form a parity: moving to an adjacent cell switches between them."
+				},
+				{
+					"field": [0, 0]
+				},
+				{
+					"parity": ["White cell", "Black cell", "Move to\nan adjacent cell"]
+				}
+			]
+		},
+		{
+			"caption": "Properties of parity",
+			"content": [
+				"An important property of parity is that @b{performing the operation twice returns you to the original state}.\nMore generally, @b{performing the operation an even number of times leaves the state unchanged, while performing it an odd number of times switches the state}.",
+				"For example, if we consider the two sides of a coin as a parity:",
+				{
+					"items": [
+						"Flipping the coin an even number of times leaves the same side facing up.",
+						"Flipping the coin an odd number of times switches which side is facing up."
+					]
+				},
+				"Next, let's see how this property can be used to solve puzzles."
+			]
+		},
+		{
+			"caption": "Using parity: Example 1",
+			"content": [
+				"Consider a 5 × 5 Area shown below.",
+				{
+					"field": [2, 0]
+				},
+				"Can this Area be completely filled with 2-cell blocks shown below?",
+				{
+					"field": [1, 0]
+				},
+				"To solve this problem, @b{whether the number of cells in the Area is even or odd} is important.\nWhether the number of remaining cells is even or odd forms a parity: filling one cell switches between the two states.",
+				{
+					"parity": ["Even number of\ncells remaining", "Odd number of\ncells remaining", "Fill 1 cell"]
+				},
+				"However, placing a 2-cell block @b{fills two cells at once}, so @b{placing a block does not change whether the number of remaining cells is even or odd}.\nTherefore, it is impossible to completely fill a 5 × 5 = 25-cell Area (an odd number of cells) and leave 0 cells (an even number). No matter how the blocks are placed, an odd number of cells will always remain.",
+				{
+					"field": [2, 1]
+				},
+				"In this way, parity is especially useful for @b{proving that a puzzle has no solution}."
+			]
+		},
+		{
+			"caption": "Using parity: Example 2",
+			"content": [
+				"Now let's consider whether the Area below can be completely filled with 2-cell blocks.",
+				{
+					"field": [3, 0]
+				},
+				"This Area has 46 cells in total. Unlike the previous example, the number of cells is not odd, so it may be possible to completely fill the Area with 2-cell blocks.",
+				"First, focus on the cell @m{info}. Notice that placing a block on @m{info} divides the Area into left and right regions.",
+				{
+					"field": [3, 1]
+				},
+				"If the block is placed as shown below, the left region has 21 cells and the right region has 23 cells. Since both regions have an odd number of cells, we know from the previous example that they cannot be completely filled with 2-cell blocks.",
+				{
+					"field": [3, 2]
+				},
+				"Therefore, the block on @m{info} must be placed as shown below. In this case, the left and right regions each have 22 cells, so it may still be possible to completely fill them with 2-cell blocks.",
+				{
+					"field": [3, 3]
+				},
+				"In this way, parity can also be used to @b{narrow down the possibilities when finding a solution to a puzzle}.",
+				{
+					"box": "info",
+					"content": "However, this Area actually cannot be completely filled with 2-cell blocks after all.\nThis can be proven by focusing on the @b{color imbalance}, which will be explained on a later page."
+				}
+			]
+		},
+		{
+			"caption": "Summary",
+			"content": [
+				"Parity appears in many different situations in both Tiling Forest and the full game, Tiling Town.",
+				"Knowing when to use parity is not easy, but once you learn to use it effectively, you'll really feel like you're solving puzzles the smart way. Give it a try!"
+			]
+		}
+	]
+}

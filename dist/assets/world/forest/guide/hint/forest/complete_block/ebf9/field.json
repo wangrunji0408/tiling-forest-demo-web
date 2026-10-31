@@ -1,0 +1,6 @@
+{
+	"field": "hint/forest/field/ebf9",
+	"progress": [
+		{"roads":["(0,4)","(4,6)"],"sections":{"forest":{"blocks":{"ebf9":0}}},"tiles":[{"mark":"info","pos":"(5,5)"}]}
+	]
+}

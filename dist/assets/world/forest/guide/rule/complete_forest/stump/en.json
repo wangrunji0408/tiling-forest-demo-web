@@ -1,0 +1,19 @@
+{
+	"caption": "Condition to complete the Forest: Stump",
+	"content": [
+		"Some stumps @T{forest_gate.r} are placed outside the Area. All those stumps must sprout.",
+		{
+			"field": [0, 0]
+		},
+		"The conditions under which stumps sprout are explained in detail on the page @g{rule/complete_block/stump}{the stump condition to complete Areas}.",
+		{
+			"caption": "Failed example",
+			"content": [
+				"The stump outside the Area has not sprouted.",
+				{
+					"field": [0, 1]
+				}
+			]
+		}
+	]
+}

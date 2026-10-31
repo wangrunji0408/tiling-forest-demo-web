@@ -1,0 +1,8 @@
+{
+	"field": "hint/forest/field/59d7",
+	"progress": [
+		{"roads":["(5,5)"],"sections":{"forest":{"blocks":{"59d7":0}}},"tiles":[{"mark":"pending","pos":"(5,4)"}]},
+		{"roads":["(5,5)"],"sections":{"forest":{"blocks":{"59d7":0}}},"tiles":[{"mark":"unsatisfied","pos":"(5,4)"}]},
+		{"roads":["(5,5)"],"sections":{"forest":{"blocks":{"59d7":0}}},"tiles":[{"mark":"info","pos":"(5,5)"}]}
+	]
+}

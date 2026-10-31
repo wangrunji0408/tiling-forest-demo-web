@@ -1,0 +1,23 @@
+{
+	"caption": "How to use the Guide",
+	"content": [
+		"If you're reading this, you're using the Guide correctly!",
+		{
+			"caption": "What is in the Guide",
+			"content": [
+				{
+					"items": [
+						"Rules: rules of this game. @b{Recommended to read all sections.}",
+						"Tips: puzzle-solving techniques. @b{You don't have to read this section}. Refer to them when you find yourself lost or stuck."
+					]
+				}
+			]
+		},
+		{
+			"caption": "\"Got it\" button",
+			"content": [
+				"When you finish reading a section and get it, press the \"Got it\" button."
+			]
+		}
+	]
+}

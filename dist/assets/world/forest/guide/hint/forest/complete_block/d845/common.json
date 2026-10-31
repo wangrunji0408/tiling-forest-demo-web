@@ -1,0 +1,337 @@
+﻿{
+	"caption": "@s{section_name/forest}: @s{block_name/} @s{block_name/d845}",
+	"content": [
+		{
+			"if": {
+				"tile": "forest_road.2t.dl"
+			},
+			"else": [
+				{
+					"summary": "@s{hint/step}{1}",
+					"open": true,
+					"details": [
+						{
+							"guide": "tips/complete_block/common/candidate_1"
+						},
+						"@s{hint/common/start/one_cell}",
+						{
+							"field": [0, 0]
+						},
+						"@s{hint/common/next/one_cell}"
+					]
+				},
+				{
+					"summary": "@s{hint/step}{2}",
+					"details": [
+						{
+							"guide": "rule/complete_block/fill"
+						},
+						"@s{hint/common/impossible/one_cell}"
+					]
+				}
+			]
+		},
+		{
+			"summary": "@s{hint/step}{1}",
+			"open": true,
+			"details": [
+				{
+					"guide": "tips/complete_block/road/simple"
+				},
+				"@s{hint/forest/road/simple/start/multiple_roads}{3}",
+				{
+					"field": [0, 1]
+				},
+				"@s{hint/forest/road/simple/next/multiple_roads}"
+			]
+		},
+		{
+			"if": {
+				"tile": "forest_open_road.l"
+			},
+			"else": [
+				{
+					"summary": "@s{hint/step}{2}",
+					"details": [
+						{
+							"guide": "rule/complete_block/road"
+						},
+						"@s{hint/forest/road/simple/impossible/multiple_roads}"
+					]
+				}
+			]
+		},
+		{
+			"summary": "@s{hint/step}{2}",
+			"details": [
+				{
+					"guide": "tips/complete_block/open_road/via_open"
+				},
+				{
+					"if": {
+						"tile": "forest_open_road.r"
+					},
+					"else": [
+						{
+							"if": {
+								"tile": "forest_open_road.d"
+							},
+							"else": [
+								"@s{hint/forest/open_road/simple/multiple_roads}\n@s{hint/forest/open_road/shape/large/0}",
+								{
+									"field": 1
+								}
+							],
+							"then": [
+								"@s{hint/forest/open_road/simple/multiple_roads}\n@s{hint/forest/open_road/shape/large/1}",
+								{
+									"field": 2
+								}
+							]
+						},
+						"@s{hint/forest/open_road/start/trivial}",
+						{
+							"summary": "@s{hint/step}{2.1}",
+							"details": [
+								"@s{hint/forest/open_road/instance/candidate}",
+								{
+									"field": [0, 2]
+								}
+							]
+						},
+						{
+							"if": {
+								"tile": "forest_open_road.d"
+							},
+							"then": {
+								"summary": "@s{hint/step}{2.2}",
+								"details": [
+									"@s{hint/forest/open_road/instance/candidate}",
+									{
+										"field": [0, 3]
+									}
+								]
+							},
+							"else": null
+						},
+						"@s{hint/forest/open_road/next}"
+					]
+				},
+				{
+					"if": {
+						"tile": "forest_open_road.r"
+					},
+					"else": [
+						"@s{hint/forest/open_road/start/trivial}\n@s{hint/forest/open_road/next}"
+					],
+					"then": [
+						{
+							"if": {
+								"tile": "forest_open_road.u"
+							},
+							"else": [
+								"@s{hint/forest/open_road/simple/multiple_roads}\n@s{hint/forest/open_road/shape/large/2}",
+								{
+									"field": 3
+								}
+							],
+							"then": [
+								"@s{hint/forest/open_road/simple/multiple_roads}\n@s{hint/forest/open_road/shape/large/3}",
+								{
+									"field": 4
+								}
+							]
+						},
+						{
+							"guide": "tips/complete_block/open_road/where_to_place"
+						},
+						"@s{hint/forest/open_road/start/mark}",
+						{
+							"field": [0, 4]
+						},
+						{
+							"summary": "@s{hint/step}{2.1}",
+							"details": [
+								"@s{hint/forest/open_road/filter/candidate/multiple_cells/0}",
+								{
+									"field": [0, 5]
+								}
+							]
+						},
+						{
+							"summary": "@s{hint/step}{2.2}",
+							"details": [
+								"@s{hint/forest/open_road/filter/candidate/one_cell/2/one_cell}",
+								{
+									"field": [0, 6]
+								}
+							]
+						},
+						{
+							"summary": "@s{hint/step}{2.3}",
+							"details": [
+								"@s{hint/forest/open_road/filter/candidate/multiple_cells/2/one_cell}",
+								{
+									"field": [0, 7]
+								}
+							]
+						},
+						{
+							"if": {
+								"tile": "forest_open_road.u"
+							},
+							"else": [
+								{
+									"summary": "@s{hint/step}{2.4}",
+									"details": [
+										"@s{hint/forest/open_road/filter/candidate/multiple_cells/0}",
+										{
+											"field": [0, 8]
+										}
+									]
+								},
+								{
+									"summary": "@s{hint/step}{2.5}",
+									"details": [
+										"@s{hint/forest/open_road/filter/candidate/multiple_cells/2/one_cell}",
+										{
+											"field": [0, 12]
+										}
+									]
+								},
+								{
+									"summary": "@s{hint/step}{2.6}",
+									"details": [
+										"@s{hint/forest/open_road/filter/possible/whole}",
+										{
+											"field": [0, 13]
+										}
+									]
+								}
+							],
+							"then": [
+								{
+									"summary": "@s{hint/step}{2.4}",
+									"details": [
+										"@s{hint/forest/open_road/filter/candidate/one_cell/2/one_cell}",
+										{
+											"field": [0, 9]
+										}
+									]
+								},
+								{
+									"summary": "@s{hint/step}{2.5}",
+									"details": [
+										"@s{hint/forest/open_road/filter/candidate/multiple_cells/2/one_cell}",
+										{
+											"field": [0, 10]
+										}
+									]
+								},
+								{
+									"summary": "@s{hint/step}{2.6}",
+									"details": [
+										"@s{hint/forest/open_road/filter/candidate/multiple_cells/0}",
+										{
+											"field": [0, 11]
+										}
+									]
+								},
+								{
+									"summary": "@s{hint/step}{2.7}",
+									"details": [
+										"@s{hint/forest/open_road/filter/candidate/multiple_cells/2/one_cell}",
+										{
+											"field": [0, 12]
+										}
+									]
+								},
+								{
+									"summary": "@s{hint/step}{2.8}",
+									"details": [
+										"@s{hint/forest/open_road/filter/possible/whole}",
+										{
+											"field": [0, 13]
+										}
+									]
+								}
+							]
+						},
+						"@s{hint/forest/open_road/next}"
+					]
+				}
+			]
+		},
+		{
+			"if": {
+				"tile": "forest_open_road.r"
+			},
+			"else": {
+				"summary": "@s{hint/step}{3}",
+				"details": [
+					{
+						"guide": "rule/complete_block/road"
+					},
+					"@s{hint/forest/open_road/impossible/simple/multiple_roads}"
+				]
+			}
+		},
+		{
+			"summary": "@s{hint/step}{3}",
+			"details": [
+				{
+					"guide": "tips/complete_block/common/candidate_1"
+				},
+				{
+					"guide": "tips/complete_block/common/candidate_2"
+				},
+				"@s{hint/common/middle/multiple_cells}",
+				{
+					"field": [0, 14]
+				},
+				"@s{hint/common/next/multiple_cells}"
+			]
+		},
+		{
+			"summary": "@s{hint/step}{4}",
+			"details": [
+				{
+					"guide": "tips/complete_block/road/closed"
+				},
+				"@s{hint/common/middle/multiple_cells}\n@s{hint/forest/road/closed/warning/existing/multiple_roads}",
+				{
+					"field": [0, 15]
+				},
+				"@s{hint/forest/road/closed/next/multiple_roads/multiple_cells}"
+			]
+		},
+		{
+			"summary": "@s{hint/step}{5}",
+			"details": [
+				{
+					"guide": "tips/complete_block/open/fill"
+				},
+				"@s{hint/common/middle/multiple_cells}\n@s{hint/forest/road/closed/warning/new}",
+				{
+					"field": [0, 16]
+				},
+				"@s{hint/forest/road/closed/next/one_road/multiple_cells}"
+			]
+		},
+		{
+			"summary": "@s{hint/step}{6}",
+			"details": [
+				{
+					"guide": "tips/complete_block/common/candidate_1"
+				},
+				{
+					"guide": "tips/complete_block/road/closed"
+				},
+				"@s{hint/common/possible/skip/multiple_cells}",
+				{
+					"field": [0, 17]
+				}
+			]
+		}
+	]
+}

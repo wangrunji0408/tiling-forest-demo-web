@@ -1,0 +1,119 @@
+{
+	"caption": "@s{section_name/forest}: @s{block_name/} @s{block_name/3230} @s{road/u}",
+	"content": [
+		{
+			"if": {
+				"tile": "forest_road.2s.ud"
+			},
+			"else": [
+				{
+					"summary": "@s{hint/step}{1}",
+					"open": true,
+					"details": [
+						{
+							"guide": "tips/unlock_block/inaccessible"
+						},
+						"@s{hint/unlock/inaccessible/start/multiple_cells}",
+						{
+							"if": {
+								"road": "(22, 12)"
+							},
+							"else": {
+								"field": [0, 0]
+							},
+							"then": {
+								"field": [0, 1]
+							}
+						},
+						"@s{hint/unlock/inaccessible/next}"
+					]
+				},
+				{
+					"summary": "@s{hint/step}{2}",
+					"details": [
+						{
+							"guide": "tips/unlock_block/inaccessible"
+						},
+						"@s{hint/unlock/inaccessible/filter/multiple_cells}\n@s{hint/unlock/inaccessible/middle/multiple_cells}",
+						{
+							"if": {
+								"road": "(22, 12)"
+							},
+							"else": {
+								"field": [0, 2]
+							},
+							"then": {
+								"field": [0, 3]
+							}
+						},
+						"@s{hint/unlock/inaccessible/next}"
+					]
+				},
+				{
+					"summary": "@s{hint/step}{3}",
+					"details": [
+						{
+							"guide": "rule/unlock_block/connect"
+						},
+						"@s{hint/unlock/inaccessible/filter/multiple_cells}\n@s{hint/unlock/inaccessible/impossible/multiple_cells}",
+						{
+							"if": {
+								"road": "(22, 12)"
+							},
+							"else": {
+								"field": [0, 4]
+							},
+							"then": {
+								"field": [0, 5]
+							}
+						}
+					]
+				}
+			]
+		},
+		[
+			{
+				"summary": "@s{hint/step}{1}",
+				"open": true,
+				"details": [
+					{
+						"guide": "tips/unlock_block/inaccessible"
+					},
+					"@s{hint/unlock/inaccessible/start/multiple_cells}",
+					{
+						"if": {
+							"road": "(15, 9)"
+						},
+						"else": {
+							"field": [0, 6]
+						},
+						"then": {
+							"field": [0, 7]
+						}
+					},
+					"@s{hint/unlock/inaccessible/next}"
+				]
+			},
+			{
+				"summary": "@s{hint/step}{2}",
+				"details": [
+					{
+						"guide": "rule/unlock_block/connect"
+					},
+					"@s{hint/unlock/inaccessible/filter/multiple_cells}\n@s{hint/unlock/inaccessible/possible/multiple_cells}",
+					{
+						"if": {
+							"road": "(15, 9)"
+						},
+						"else": {
+							"field": [0, 8]
+						},
+						"then": {
+							"field": [0, 9]
+						}
+					}
+				]
+			}
+		]
+	]
+}

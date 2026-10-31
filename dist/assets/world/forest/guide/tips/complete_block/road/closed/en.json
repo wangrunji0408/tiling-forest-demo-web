@@ -1,0 +1,44 @@
+{
+	"caption": "Try to avoid closing roads.",
+	"content": [
+		"We will refer to a state where a continuous road can no longer be extended in any direction as the road being @b{closed}.",
+		"For example, both of the following roads are closed.",
+		{
+			"field": [0, 0]
+		},
+		"On the other hand, the following road is not closed, because you can still place a road tile at the cell @m{pending}.",
+		{
+			"field": [1, 0]
+		},
+		"To complete an Area, @g{rule/complete_block/road}{all roads must form a single connected network}. Once a road is closed, it can no longer be extended to connect to other roads. Be careful not to close a road while there are still other roads that need to be connected.",
+		{
+			"caption": "Example",
+			"content": [
+				"Assuming your available tiles are @t{forest_road.2s.lr} @t{forest_road.2t.dr} @t{forest_road.2t.dl} @t{forest_road.2t.ul} @t{forest_road.2t.ur}, let's solve this Area.",
+				{
+					"field": [2, 0]
+				},
+				"First, if we focus on the cell @m{pending}, there are two tiles that can be placed here: @t{forest_road.2s.lr} @t{forest_road.2t.dl}.",
+				{
+					"field": [2, 1]
+				},
+				"If you place @t{forest_road.2t.dl}, the cell below can only take @t{forest_road.2t.ul}, which causes the road to become closed as follows.",
+				{
+					"field": [2, 2]
+				},
+				"Even if you place more road tiles, the roads will not form a single connected network, and you won't be able to complete the Area. So, we can see that placing @t{forest_road.2t.dl} on the cell @m{pending} was a mistake.",
+				{
+					"field": [2, 3]
+				},
+				"Therefore, the tile on the cell @m{pending} must be @t{forest_road.2s.lr}, which also determines the tile for the cell below.",
+				{
+					"field": [2, 4]
+				},
+				"By repeating this deduction, the Area will be completed as follows.",
+				{
+					"field": [2, 5]
+				}
+			]
+		}
+	]
+}

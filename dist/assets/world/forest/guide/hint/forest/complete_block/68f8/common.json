@@ -1,0 +1,36 @@
+﻿{
+	"caption": "@s{section_name/forest}: @s{block_name/} @s{block_name/68f8}",
+	"content": [
+		{
+			"summary": "@s{hint/step}{1}",
+			"open": true,
+			"details": [
+				{
+					"guide": "tips/complete_block/common/candidate_1"
+				},
+				{
+					"slot": 0
+				},
+				{
+					"field": [0, 0]
+				},
+				"@s{hint/common/next/multiple_cells}"
+			]
+		},
+		{
+			"summary": "@s{hint/step}{2}",
+			"details": [
+				{
+					"guide": "tips/complete_block/common/candidate_1"
+				},
+				{
+					"slot": 1
+				},
+				{
+					"field": [0, 1]
+				},
+				"@s{hint/common/possible/skip/multiple_cells}"
+			]
+		}
+	]
+}

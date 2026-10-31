@@ -1,0 +1,39 @@
+﻿{
+	"caption": "创建空地，填补道路无法通过的地方",
+	"content": [
+		"当空地的角图块 @t{forest_open.1.dr} @t{forest_open.1.dl} @t{forest_open.1.ul} @t{forest_open.1.ur} 集齐后，就可以创建空地了。",
+		{
+			"field": [0, 0]
+		},
+		"在只能创建道路和空地的情况下，@b{道路无法通过的地方只能用空地来填补}。",
+		{
+			"caption": "示例",
+			"content": [
+				"假设手头的图块为 @t{forest_road.2s.lr} @t{forest_road.2t.dr} @t{forest_open.1.dr} 及其旋转，解开以下区域。",
+				{
+					"field": [1, 0]
+				},
+				"关注 @m{pending} 的格子，可以放置在该格子的图块是 @t{forest_road.2t.ur} 或 @t{forest_open.1.ur} 中的一种。",
+				{
+					"field": [1, 1]
+				},
+				"如果放置 @t{forest_road.2t.ur}，由于无法从变窄的位置 @m{unsatisfied} 向外侧延伸道路，所以无法@g{rule/complete_block/road}{将道路连接成一体}。",
+				{
+					"field": [1, 2]
+				},
+				"因此，@m{pending} 的格子只能放置空地图块，像这样创建空地。",
+				{
+					"field": [1, 3]
+				},
+				"同样，@m{pending} 的格子也无法通过道路，所以创建空地。",
+				{
+					"field": [1, 4]
+				},
+				"剩余的格子可以用道路填补，像这样完成区域。",
+				{
+					"field": [1, 5]
+				}
+			]
+		}
+	]
+}

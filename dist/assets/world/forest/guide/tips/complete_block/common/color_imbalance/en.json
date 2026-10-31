@@ -1,0 +1,38 @@
+﻿{
+	"caption": "Focus on the color imbalance of the cells.",
+	"content": [
+		"In the explanation of @g{tips/complete_block/common/parity}{parity}, we saw how parity, such as @b{whether the number of cells is even or odd}, can be important for solving puzzles.\nThis page introduces an even more powerful concept: the @b{color imbalance} of cells.",
+		{
+			"caption": "Color imbalance",
+			"content": [
+				"We define the @b{color imbalance} as @b{the number of white cells minus the number of black cells}.\nFor example, the Area below has 8 white cells and 6 black cells, so its color imbalance is 8 - 6 = +2 (2 more white cells).",
+				{"field": [0, 0]},
+				"Likewise, the road below passes through 2 white cells and 3 black cells, so its color imbalance is 2 - 3 = -1 (1 more black cell).",
+				{"field": [0, 1]}
+			]
+		},
+		{
+			"caption": "Using color imbalance",
+			"content": [
+				"The color imbalance of cells has properties similar to the parity of the number of cells.",
+				"For example, for a simple road, reasoning in the same way as with @g{tips/complete_block/road/parity}{the parity of the number of cells} shows that its color imbalance is determined as follows.",
+				{"items": ["If both endpoints are white cells @m{true}, the color imbalance is +1.","If both endpoints are black cells @m{false}, the color imbalance is -1.","If the endpoints have different colors, the color imbalance is ±0."]},
+				"Similarly, reasoning about the perimeter of an empty lot in the same way as with @g{tips/complete_block/open/parity}{the parity of the number of cells} shows that its color imbalance is ±0.",
+				{"field": [1, 0]},
+				"Just as with the parity of the number of cells, @b{if the total color imbalance of the terrain does not match the color imbalance of the entire Area, the Area cannot be completely filled}.\nThe parity of the number of cells is @b{binary}, while color imbalance is @b{an integer}, allowing us to distinguish situations more precisely."
+			]
+		},
+		{
+			"caption": "Example",
+			"content": [
+				"Let's continue with Example 2 from the @g{tips/complete_block/common/parity}{page explaining parity}.\nThe question was whether the Area below could be completely filled with 2-cell blocks.",
+				{"field": [2, 0]},
+				"Looking at the left region, its color imbalance is +2 (@m{true} 12 @m{false} 10).",
+				{"field": [2, 1]},
+				"On the other hand, no matter how a 2-cell block is placed, its color imbalance is ±0 (@m{true} 1 @m{false} 1). Therefore, @b{no matter how many 2-cell blocks are placed, their total color imbalance remains ±0}. Thus, an Area with a color imbalance of +2 cannot be completely filled.",
+				{"field": [2, 2]},
+				"The right region, meanwhile, has a color imbalance of -2 (@m{true} 10 @m{false} 12), so it also cannot be completely filled with 2-cell blocks.\nIn general, @b{Areas with a large absolute color imbalance tend to be harder to fill}, so it's worth keeping this in mind."
+			]
+		}
+	]
+}

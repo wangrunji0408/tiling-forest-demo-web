@@ -1,0 +1,14 @@
+{
+	"caption": "Hint Feature",
+	"content": [
+		"If you're not sure how to apply the techniques in the \"Tips\" guide to an actual puzzle, you can use the @b{Hint feature}.\nWhen enabled, it provides step-by-step hints on how to solve each Area logically—either by completing it or by proving that it cannot be completed.",
+		{
+			"box": "info",
+			"content": "We recommend using the Hint feature @b{only when you're completely stuck and can't progress}, and viewing @b{only as much as you need}.\nIf you rely on hints to progress without learning how to solve the puzzles yourself, you may struggle later on."
+		},
+		{
+			"setting": "is_hint_enabled",
+			"name": "Enable the Hint feature"
+		}
+	]
+}

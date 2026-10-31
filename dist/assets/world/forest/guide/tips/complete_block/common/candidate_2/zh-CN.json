@@ -1,0 +1,43 @@
+{
+	"caption": "关注相邻格子，缩小候选可放置图块的范围",
+	"content": [
+		"在一个格子放置图块后，会限制其相邻格子可放置的图块。利用这一点，有时可以缩小可放置图块的候选范围。",
+		{
+			"caption": "示例",
+			"content": [
+				"假设手中的图块为 @t{forest_road.2s.lr} @t{forest_road.2t.dr} @t{forest_open.1.dr} 以及它们的旋转形态，目标是完成以下区域。",
+				{
+					"field": [0, 0]
+				},
+				"首先，关注 @m{pending} 的格子，这个格子可以放置的图块有 @t{forest_road.2s.lr} 和 @t{forest_road.2t.dl} 两种。",
+				{
+					"field": [0, 1]
+				},
+				"如果放置了 @t{forest_road.2s.lr}，那么 @m{unsatisfied} 的格子将没有可放置的图块。",
+				{
+					"field": [0, 2]
+				},
+				"因此，决定在 @m{pending} 的格子放置 @t{forest_road.2t.dl}。",
+				{
+					"field": [0, 3]
+				},
+				"接下来，关注 @m{pending} 的格子，这个格子可以放置的图块有 @t{forest_road.2t.dl} 和 @t{forest_open.1.dl} 两种。",
+				{
+					"field": [0, 4]
+				},
+				"如果放置了 @t{forest_open.1.dl}，那么 @m{unsatisfied} 的格子将没有可放置的图块。",
+				{
+					"field": [0, 5]
+				},
+				"因此，决定在 @m{pending} 的格子放置 @t{forest_road.2t.dl}。",
+				{
+					"field": [0, 6]
+				},
+				"之后，通过@g{tips/complete_block/common/candidate_1}{思考剩余候选格能否放置图块}，即可完成区域。",
+				{
+					"field": [0, 7]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,80 @@
+{
+	"caption": "树桩图块的使用方法",
+	"content": [
+		"使用树桩图块 @t{forest_gate.r} 可以大大扩展填充区域的可能性。但是，要满足@g{rule/complete_block/stump}{区域完成条件}，其放置位置意外地受限。",
+		{
+			"caption": "示例 1",
+			"content": [
+				"假设手中的图块为 @t{forest_road.2s.lr} @t{forest_road.2t.dr} @t{forest_open.1.dr} @t{forest_open.2s.r} @t{forest_open_road.r} @t{forest_gate.r} 以及它们的旋转形态，目标是完成以下区域。",
+				{
+					"field": [0, 0]
+				},
+				"首先，关注 @m{pending} 的格子，这里可以放置的图块有 @t{forest_road.2t.ur}、@t{forest_open.1.ur} 以及树桩图块 @t{forest_gate.r} @t{forest_gate.d} @t{forest_gate.l} @t{forest_gate.u} 中的某一种。但是，@g{tips/complete_block/common/candidate_2}{考虑周围格子候选的可放置图块}后，得知不能放置 @t{forest_road.2t.ur} 和 @t{forest_open.1.ur}，因此只能放置树桩图块。",
+				{
+					"field": [0, 1]
+				},
+				"另外，树桩需要隔开 1 格形成相对方向的配对。例如，如果在此处放置朝右的树桩图块 @t{forest_gate.r}，则 2 格外的图块 @t{forest_open.1.ul} 会妨碍配对。",
+				{
+					"field": [0, 2]
+				},
+				"最终，@m{pending} 的格子只能放置朝上的树桩图块 @t{forest_gate.u}，这样创建树桩配对并延伸道路。",
+				{
+					"field": [0, 3]
+				},
+				"接下来，关注 @m{pending} 的格子，这里可以放置的图块有 @t{forest_road.2t.dl}、@t{forest_open.1.dl} 以及树桩图块 @t{forest_gate.r} @t{forest_gate.d} @t{forest_gate.l} @t{forest_gate.u} 中的某一种。但是，其中实际上只能放置 @t{forest_road.2t.dl}。例如，如果放置朝下的树桩图块 @t{forest_gate.d}，虽然可以在 2 格外放置树桩，但无法在树桩之间的 @m{unsatisfied} 格子铺设道路。",
+				{
+					"field": [0, 4]
+				},
+				"对剩余格子进行同样的思考，即可像这样完成区域。",
+				{
+					"field": [0, 5]
+				}
+			]
+		},
+		{
+			"caption": "示例 2",
+			"content": [
+				"假设手中的图块为 @t{forest_road.2s.lr} @t{forest_road.2t.dr} @t{forest_open.1.dr} @t{forest_open.2s.r} @t{forest_open_road.r} @t{forest_gate.r} 以及它们的旋转形态，解开以下区域。",
+				{
+					"field": [1, 0]
+				},
+				"与@g{tips/complete_block/open_road/where_to_place}{带道路空地的情况}同样，也可以@b{使用笔记功能来缩小创建树桩的格子范围}。\n先给所有格子都加上 @m{pending} 标记，然后逐步删除已知无法放置树桩图块的格子的标记。",
+				{
+					"field": [1, 1]
+				},
+				"首先，有道路进入的格子 @m{unsatisfied} 不能放置树桩图块。",
+				{
+					"field": [1, 2]
+				},
+				"另外，如果在 @m{info} 的格子放置树桩图块，相邻的格子 @m{unsatisfied} 就会没有可放置的图块。",
+				{
+					"field": [1, 3]
+				},
+				"出于同样的理由，@m{unsatisfied} 的格子都不能放置树桩图块。",
+				{
+					"field": [1, 4]
+				},
+				"于是，可以知道如果在 @m{info} 的格子放置树桩图块，那么上下左右任何一个方向都无法创建配对的树桩（2 格外的格子没有 @m{pending} 标记）。",
+				{
+					"field": [1, 5]
+				},
+				"这样继续缩小范围后，@m{pending} 的格子会作为候选保留下来。",
+				{
+					"field": [1, 6]
+				},
+				"因为@b{没有 @m{pending} 标记的格子不能放置树桩图块}，所以可以以此为基础推进树桩以外的逻辑推理。",
+				{
+					"field": [1, 7]
+				},
+				"最终，决定如下创建树桩配对。",
+				{
+					"field": [1, 8]
+				},
+				"剩余过程省略，但推进逻辑推理后，就能像这样完成区域。",
+				{
+					"field": [1, 9]
+				}
+			]
+		}
+	]
+}

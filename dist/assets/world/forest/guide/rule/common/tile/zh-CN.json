@@ -1,0 +1,11 @@
+{
+	"caption": "图块的图案",
+	"content": [
+		"要放置图块，必须使图块相邻边的@b{图案对齐}。无法放置图案不匹配的图块。",
+		"例如，在 @m{pending} 的格子中可以放置 @t{forest_road.2s.lr} 或 @t{forest_road.2t.ur}，但不能放置 @t{forest_road.2t.ul} 或 @t{forest_road.2t.dr}。",
+		{
+			"field": [0, 0]
+		},
+		"随着游戏进展，除了道路 @t{forest_road.2s.lr} 之外，还会出现其他地形，所有这些地形也必须对齐图案。"
+	]
+}

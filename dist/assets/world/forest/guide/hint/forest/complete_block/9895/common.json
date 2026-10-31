@@ -1,0 +1,122 @@
+﻿{
+	"caption": "@s{section_name/forest}: @s{block_name/} @s{block_name/9895}",
+	"content": [
+		{
+			"if": {
+				"tile": "forest_open.1.ur"
+			},
+			"else": [
+				{
+					"summary": "@s{hint/step}{1}",
+					"open": true,
+					"details": [
+						{
+							"guide": "tips/complete_block/common/candidate_1"
+						},
+						"@s{hint/common/start/one_cell}",
+						{
+							"field": [0, 0]
+						},
+						{
+							"if": {
+								"tile": "forest_open.1.dr"
+							},
+							"else": "@s{hint/forest/open/unknown}",
+							"then": null
+						},
+						"@s{hint/common/next/one_cell}"
+					]
+				},
+				{
+					"summary": "@s{hint/step}{2}",
+					"details": [
+						{
+							"guide": "rule/complete_block/fill"
+						},
+						"@s{hint/common/impossible/one_cell}"
+					]
+				}
+			]
+		},
+		{
+			"if": {
+				"tile": "forest_open.2s.l"
+			},
+			"else": [
+				{
+					"summary": "@s{hint/step}{1}",
+					"open": true,
+					"details": [
+						{
+							"guide": "tips/complete_block/common/candidate_1"
+						},
+						"@s{hint/common/start/multiple_cells}",
+						{
+							"if": {
+								"tile": "forest_open.2s.r"
+							},
+							"then": "@s{hint/common/useless/one_tile}{@t{forest_open.2s.r}}"
+						},
+						{
+							"field": [0, 1]
+						},
+						"@s{hint/common/next/multiple_cells}"
+					]
+				},
+				{
+					"summary": "@s{hint/step}{2}",
+					"details": [
+						{
+							"guide": "rule/complete_block/fill"
+						},
+						"@s{hint/common/impossible/multiple_cells}"
+					]
+				}
+			]
+		},
+		[
+			{
+				"summary": "@s{hint/step}{1}",
+				"open": true,
+				"details": [
+					{
+						"guide": "tips/complete_block/common/candidate_1"
+					},
+					{
+						"guide": "tips/complete_block/common/candidate_2"
+					},
+					"@s{hint/common/start/multiple_cells}",
+					{
+						"field": [0, 1]
+					},
+					"@s{hint/common/next/multiple_cells}"
+				]
+			},
+			{
+				"summary": "@s{hint/step}{2}",
+				"details": [
+					{
+						"guide": "tips/complete_block/common/candidate_1"
+					},
+					"@s{hint/common/middle/multiple_cells}",
+					{
+						"field": [0, 2]
+					},
+					"@s{hint/common/next/multiple_cells}"
+				]
+			},
+			{
+				"summary": "@s{hint/step}{3}",
+				"details": [
+					{
+						"guide": "tips/complete_block/common/candidate_1"
+					},
+					"@s{hint/common/possible/skip/multiple_cells}",
+					{
+						"field": [0, 3]
+					}
+				]
+			}
+		]
+	]
+}

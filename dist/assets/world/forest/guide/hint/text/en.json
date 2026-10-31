@@ -1,0 +1,175 @@
+{
+	"hint": {
+		"forest": {
+			"unlock": {
+				"via_open": "Keep in mind that the road can pass through an empty lot."
+			},
+			"parity": {
+				"check": "Let's check the parity of both the number of tiles to place and the number of cells in the Area.",
+				"road": {
+					"block": {
+						"true": "A simple road starting from a road entering the Area has its starting point on a white cell @m{true}.",
+						"false": "A simple road starting from a road entering the Area has its starting point on a black cell @m{false}.",
+						"true_false": "A simple road connecting two roads entering the Area has endpoints of different colors @m{parity}.",
+						"false_false": "A simple road connecting two roads entering the Area has both endpoints on black cells @m{false}."
+					},
+					"region": {
+						"true_true": "A simple road connecting two roads entering the remaining region has both endpoints on white cells @m{true}."
+					}
+				},
+				"block": {
+					"": "This Area has $0 cells in total.",
+					"include": "Including the cells outside the Area that contain empty-lot tiles @m{info}, there are $0 cells in total."
+				},
+				"next": "@b{If you've checked the parity but still want another hint}, continue to the next hint.",
+				"impossible": {
+					"even_odd": "An Area with an odd number of cells cannot be completely filled with an even number of tiles.\nTherefore, this Area cannot be completed.",
+					"odd_even": "An Area with an even number of cells cannot be completely filled with an odd number of tiles.\nTherefore, this Area cannot be completed."
+				}
+			},
+			"color": {
+				"check": {
+					"block": "Let's check the color imbalance of both the tiles to place and the Area.",
+					"region": "Let's check the color imbalance of both the tiles to place and the remaining region."
+				},
+				"block": {
+					"": "This Area consists of $0 white cells @m{true} and $1 black cells @m{false}.",
+					"include": "Including the cells outside the Area that contain empty-lot tiles @m{info}, there are $0 white cells @m{true} and $1 black cells @m{false}."
+				},
+				"region": "The remaining region consists of $0 white cells @m{true} and $1 black cells @m{false}.",
+				"next": "@b{If you've checked the color imbalance but still want another hint}, continue to the next hint."
+			},
+			"road": {
+				"closed": {
+					"warning": {
+						"new": "Be careful not to create a closed road.",
+						"existing": {
+							"one_road": "Be careful not to close the road @m{pending}.",
+							"multiple_roads": "Be careful not to close any of the roads @m{pending}."
+						}
+					},
+					"next": {
+						"one_road": {
+							"one_cell": "@b{If you've filled this cell without closing any roads but still want another hint}, continue to the next hint.",
+							"multiple_cells": "@b{If you've filled all these cells without closing any roads but still want another hint}, continue to the next hint."
+						},
+						"multiple_roads": {
+							"one_cell": "@b{If you've filled this cell without closing any roads but still want another hint}, continue to the next hint.",
+							"multiple_cells": "@b{If you've filled all these cells without closing any roads but still want another hint}, continue to the next hint."
+						}
+					},
+					"impossible": {
+						"one_road": {
+							"one_cell": "That cell cannot be filled without closing a road.\nSince all roads cannot be connected into a single network, this Area cannot be completed.",
+							"multiple_cells": "Those cells cannot all be filled without closing a road.\nSince all roads cannot be connected into a single network, this Area cannot be completed."
+						},
+						"multiple_roads": {
+							"one_cell": "That cell cannot be filled without closing a road.\nSince all roads cannot be connected into a single network, this Area cannot be completed.",
+							"multiple_cells": "Those cells cannot all be filled without closing a road.\nSince all roads cannot be connected into a single network, this Area cannot be completed."
+						}
+					}
+				},
+				"simple": {
+					"start": {
+						"one_road": "Only one road enters this Area. Let's think about how to close it.",
+						"multiple_roads": "$0 roads enter this Area. Let's think about how to connect them into a single network."
+					},
+					"next": {
+						"one_road": "@b{If you've figured out how to close this road but still want another hint}, continue to the next hint.",
+						"multiple_roads": "@b{If you've figured out how to connect these roads into a single network but still want another hint}, continue to the next hint."
+					},
+					"impossible": {
+						"one_road": "There is no way to close this road.\nNo matter how the road is laid out, there will be a cell where no tile can be placed, so @b{this Area cannot be completed}.",
+						"multiple_roads": "There is no way to connect these roads into a single network.\nSince the roads cannot all be connected into a single network, this Area cannot be completed."
+					}
+				}
+			},
+			"open": {
+				"unknown": "You may notice an unfamiliar tile @m{pending}, but you don't need to worry about what it \"means.\"\nTo solve this Area, all you need to know is the rule that @g{rule/common/tile}{tiles can only be placed where their patterns match}.",
+				"fill": {
+					"with": "The road is already closed, so be careful not to place any more road tiles.",
+					"next": {
+						"one_cell": "@b{If you've filled this cell without using a road tile but still want another hint}, continue to the next hint.",
+						"multiple_cells": "@b{If you've filled all these cells without using road tiles but still want another hint}, continue to the next hint."
+					}
+				}
+			},
+			"open_road": {
+				"simple": {
+					"one_road": "To close the road entering the Area, you need an empty lot containing a lot-with-road tile.",
+					"multiple_roads": "To connect the roads entering the Area into a single network, you need an empty lot containing three lot-with-road tiles."
+				},
+				"color": {
+					"true": "To match the color imbalance of the tiles you use with that of the Area, you need an empty lot containing two lot-with-road tiles on white cells @m{true}.",
+					"false": "To match the color imbalance of the tiles you use with that of the Area, you need an empty lot containing two lot-with-road tiles on black cells @m{false}."
+				},
+				"shape": {
+					"small": [
+						"With your available lot-with-road tile @t{forest_open_road.l}, such an empty lot must be at least 3 cells tall.",
+						"With your available lot-with-road tiles @t{forest_open_road.l} @t{forest_open_road.d}, such an empty lot must be at least 3 cells tall or 3 cells wide.",
+						"With your available lot-with-road tiles @t{forest_open_road.l} @t{forest_open_road.d} @t{forest_open_road.r}, such an empty lot must be at least 3 cells tall or 3 cells wide.",
+						"Such an empty lot must be at least 3 cells tall or 3 cells wide."
+					],
+					"large": [
+						"With your available lot-with-road tile @t{forest_open_road.l}, such an empty lot must be at least 5 cells tall.",
+						"With your available lot-with-road tiles @t{forest_open_road.l} @t{forest_open_road.d}, such an empty lot must be at least 5 cells tall or 5 cells wide.",
+						"With your available lot-with-road tiles @t{forest_open_road.l} @t{forest_open_road.d} @t{forest_open_road.r}, such an empty lot must be at least 4 cells tall or 5 cells wide.",
+						"Such an empty lot must be at least 4 cells tall or 4 cells wide."
+					]
+				},
+				"start": {
+					"trivial": "Let's find where such an empty lot can be created.",
+					"mark": "Let's use the Note feature to narrow down where the required empty lot can be created.\nStart by marking every cell with @m{pending}, then remove the marks from places where the required empty lot cannot be created."
+				},
+				"filter": {
+					"candidate": {
+						"one_cell": [
+							"The required empty lot cannot be created if it includes the cell @m{unsatisfied}.\nTherefore, this cell can be ruled out.",
+							"If we try to create the required empty lot including the cell @m{info}, no tile can be placed on the cell @m{unsatisfied}.\nTherefore, this cell can be ruled out.",
+							{
+								"one_cell": "Creating the required empty lot including the cell @m{info} would leave the cell @m{unsatisfied} unable to be filled.\nTherefore, these cells can be ruled out.",
+								"multiple_cells": "Creating the required empty lot including the cell @m{info} would make it impossible to fill all the cells @m{unsatisfied}.\nTherefore, these cells can be ruled out."
+							}
+						],
+						"multiple_cells": [
+							"The required empty lot cannot be created if it includes the cell @m{unsatisfied}.\nTherefore, these cells can be ruled out.",
+							"If we try to create the required empty lot including the cell @m{info}, no tile can be placed on the cell @m{unsatisfied}.\nTherefore, these cells can be ruled out.",
+							{
+								"one_cell": "Creating the required empty lot including the cell @m{info} would leave the cell @m{unsatisfied} unable to be filled.\nTherefore, these cells can be ruled out.",
+								"multiple_cells": "Creating the required empty lot including the cell @m{info} would make it impossible to fill all the cells @m{unsatisfied}.\nTherefore, these cells can be ruled out."
+							}
+						],
+						"whole": [
+							"The required empty lot cannot be created within the remaining cells @m{unsatisfied}.",
+							"If we try to create the required empty lot within the remaining cells @m{info}, no tile can be placed on the cell @m{unsatisfied}.",
+							{
+								"one_cell": "Creating the required empty lot within the remaining cells @m{info} would leave the cell @m{unsatisfied} unable to be filled.",
+								"multiple_cells": "Creating the required empty lot within the remaining cells @m{info} would make it impossible to fill all the cells @m{unsatisfied}."
+							}
+						]
+					},
+					"intersection": "No matter where the required empty lot is created among the remaining cells @m{pending}, it must include the cells @m{satisfied}.",
+					"extension": {
+						"one_cell": "To avoid leaving the cell @m{info} with no tile that can be placed on it, the lot-with-road tile must be placed as shown.",
+						"multiple_cells": "To avoid leaving any of the cells @m{info} with no tile that can be placed on them, the lot-with-road tiles must be placed as shown."
+					},
+					"possible": {
+						"whole": "Therefore, the required empty lot must be created on the remaining cells @m{satisfied}."
+					}
+				},
+				"instance": {
+					"candidate": "Creating the required empty lot this way would leave the cell @m{unsatisfied} with no tile that can be placed on it."
+				},
+				"next": "@b{If you've figured out where to create the required empty lot but still want another hint}, continue to the next hint.",
+				"impossible": {
+					"simple": {
+						"one_road": "There is nowhere to create the empty lot needed to close the road.\nTherefore, this Area cannot be completed.",
+						"multiple_roads": "There is nowhere to create the empty lot needed to connect the roads into a single network.\nTherefore, this Area cannot be completed."
+					},
+					"color": "There is nowhere to create the empty lot needed to match the color imbalance.\nTherefore, this Area cannot be completed."
+				}
+			},
+			"omit": "There are no hints for completing the Forest.\nIf you've managed to clear the Forest through logical deduction, we believe you can complete it without any hints."
+		}
+	}
+}

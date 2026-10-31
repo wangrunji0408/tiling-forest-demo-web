@@ -1,0 +1,4 @@
+[
+	"The key to completing an Area is to @b{find cells where you can determine exactly which tile to place}.\nLet's start by looking at the cells @m{info}. Only one of @t{forest_road.2s.lr} @t{forest_road.2t.dr} @t{forest_road.2t.ul} @t{forest_road.2t.ur} can be placed on each of these cells.",
+	"Now that you've placed a few tiles, there is also only one tile that can be placed on each of the cells @m{info}.\nBy determining which tile to place @b{one cell at a time}, you can solve the puzzle without relying on intuition or inspiration."
+]

@@ -1,0 +1,10 @@
+{
+	"caption": "空地 @t{forest_open.1.dr}",
+	"content": [
+		"空地 @t{forest_open.1.dr} 是与道路 @t{forest_road.2s.lr} 不同类型的地形。",
+		"因此，即使存在如下图的空地，也会满足@g{rule/complete_block/road}{关于道路的区域完成条件}。",
+		{
+			"field": [0, 0]
+		}
+	]
+}

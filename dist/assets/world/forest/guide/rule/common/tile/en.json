@@ -1,0 +1,11 @@
+{
+	"caption": "Matching the patterns of adjacent tiles",
+	"content": [
+		"When you place a tile, you need to @b{match the pattern} on every adjacent side of the surrounding tiles.",
+		"See the cell @m{pending}. You can place @t{forest_road.2s.lr} or @t{forest_road.2t.ur}, but you can place neither @t{forest_road.2t.ul} nor @t{forest_road.2t.dr}.",
+		{
+			"field": [0, 0]
+		},
+		"As the game progresses, terrains other than the road @t{forest_road.2s.lr} may appear. All of them must follow the rule: match the pattern."
+	]
+}

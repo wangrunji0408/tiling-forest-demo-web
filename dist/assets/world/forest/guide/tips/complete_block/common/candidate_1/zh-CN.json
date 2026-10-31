@@ -1,0 +1,54 @@
+{
+	"caption": "关注某一格子，思考候选的可放置图块",
+	"content": [
+		"完成区域的基本技巧是@b{关注一个格子}。",
+		{
+			"items": [
+				"如果某个格子可放置的图块只有一种，那么就只能放置那个图块。",
+				"如果没有可以放置在某个格子的图块，那么该区域就无法完成。"
+			]
+		},
+		{
+			"caption": "示例 1",
+			"content": [
+				"假设手中的图块为 @t{forest_road.2s.lr} @t{forest_road.2t.dr} @t{forest_road.2t.dl} @t{forest_road.2t.ul} @t{forest_road.2t.ur}，目标是完成以下区域。",
+				{
+					"field": [0, 0]
+				},
+				"例如，关注 @m{pending} 的格子。这个格子可以放置向左延伸道路的道路图块 @t{forest_road.2s.lr} @t{forest_road.2t.dl} @t{forest_road.2t.ul}。但是，目前尚不清楚应该放置三种中的哪一种。",
+				{
+					"field": [0, 1]
+				},
+				"另一方面，关注 @m{satisfied} 的格子，这里可以放置的图块只有 @t{forest_road.2t.ur}。因此，可以确定这里只能放置 @t{forest_road.2t.ur}。",
+				{
+					"field": [0, 2]
+				},
+				"放置了一个图块后，之前关注的 @m{pending} 格子可放置图块的候选范围缩小了。这里只剩下 @t{forest_road.2t.dl} 可以放置，因此决定放置这个图块。",
+				{
+					"field": [0, 3]
+				},
+				"重复这样的决定方法，就可以像这样铺满图块，完成区域。",
+				{
+					"field": [0, 4]
+				}
+			]
+		},
+		{
+			"caption": "示例 2",
+			"content": [
+				"假设手中的图块为 @t{forest_road.2s.lr} @t{forest_road.2t.dr} @t{forest_road.2t.dl} @t{forest_road.2t.ul} @t{forest_road.2t.ur}，目标是完成以下区域。",
+				{
+					"field": [1, 0]
+				},
+				"首先关注 @m{satisfied} 的格子，分别可以这样确定。",
+				{
+					"field": [1, 1]
+				},
+				"此时关注 @m{unsatisfied} 的格子，手中没有可以放置在这个格子的图块。因此，可以判断这个区域无法完成。请先解开其他区域，增加手中的图块。",
+				{
+					"field": [1, 2]
+				}
+			]
+		}
+	]
+}

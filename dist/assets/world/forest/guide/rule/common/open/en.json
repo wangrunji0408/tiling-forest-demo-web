@@ -1,0 +1,10 @@
+{
+	"caption": "Empty lot @t{forest_open.1.dr}",
+	"content": [
+		"Empty lots @t{forest_open.1.dr} are not considered roads @t{forest_road.2s.lr}.",
+		"Therefore, @g{rule/complete_block/road}{the road condition to complete the Area below} is satisfied while there is an empty lot separated from the road.",
+		{
+			"field": [0, 0]
+		}
+	]
+}

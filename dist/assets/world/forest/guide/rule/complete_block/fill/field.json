@@ -1,0 +1,7 @@
+﻿{
+	"field": {"sections":[{"blocks":{"de74":[{"pos":"(1,1)"},{"pos":"(2,1)"},{"pos":"(3,1)"},{"pos":"(1,2)"},{"pos":"(2,2)"},{"pos":"(3,2)"}]},"id":"forest","outer":[{"pos":"(0,0)","tile":"forest.blank"},{"pos":"(1,0)","tile":"forest.blank"},{"pos":"(2,0)","tile":"forest.blank"},{"pos":"(3,0)","tile":"forest.blank"},{"pos":"(4,0)","tile":"forest.blank"},{"pos":"(0,1)","tile":"forest_road.1.r"},{"pos":"(4,1)","tile":"forest.blank"},{"pos":"(0,2)","tile":"forest.blank"},{"pos":"(4,2)","tile":"forest_road.1.l"},{"pos":"(0,3)","tile":"forest.blank"},{"pos":"(1,3)","tile":"forest.blank"},{"pos":"(2,3)","tile":"forest.blank"},{"pos":"(3,3)","tile":"forest.blank"},{"pos":"(4,3)","tile":"forest.blank"}]}]},
+	"progress": [
+		{"roads":["(0,1)","(4,2)"],"sections":{"forest":{"blocks":{"de74":2}}},"tiles":[{"pos":"(1,1)","tile":"forest_road.2t.dl"},{"pos":"(2,1)","tile":"forest_road.2t.dr"},{"pos":"(3,1)","tile":"forest_road.2t.dl"},{"pos":"(1,2)","tile":"forest_road.2t.ur"},{"pos":"(2,2)","tile":"forest_road.2t.ul"},{"pos":"(3,2)","tile":"forest_road.2t.ur"}]},
+		{"roads":["(0,1)","(4,2)"],"sections":{"forest":{"blocks":{"de74":0}}},"tiles":[{"pos":"(1,1)","tile":"forest_road.2t.dl"},{"pos":"(1,2)","tile":"forest_road.2t.ur"},{"pos":"(2,2)","tile":"forest_road.2s.lr"},{"pos":"(3,2)","tile":"forest_road.2s.lr"}]}
+	]
+}

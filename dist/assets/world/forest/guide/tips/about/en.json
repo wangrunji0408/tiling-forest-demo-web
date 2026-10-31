@@ -1,0 +1,15 @@
+{
+	"caption": "About the \"Tips\" Guide",
+	"content": [
+		"The \"Tips\" guide is @b{a reference for logical puzzle-solving techniques}.\n@b{It isn't intended to be read from beginning to end.} If you're having trouble with a puzzle, we recommend reading only the sections you need.",
+		"@b{Everything you need to know to progress through the game is covered in the \"System\" and \"Rules\" guides.}\nIf you'd rather discover the techniques on your own, you can play through the game without reading the \"Tips\" guide.",
+		{
+			"caption": "Intuition vs. Logic",
+			"content": [
+				"Puzzle-solving approaches can broadly be divided into two types: @b{intuition}, where you find an answer through trial and error, and @b{logic}, where you work toward an answer by building on what you know for certain.",
+				"Intuitive approaches are @b{weak when a puzzle has no solution}.\nIf you try placing tiles at random in an Area that can't yet be completed, failing to find an answer @b{doesn't prove that there isn't one}.",
+				"Logical approaches, on the other hand, are @b{strong when a puzzle has no solution}.\nIf you place only tiles whose positions can be determined with certainty and eventually reach a contradiction, @b{you've proven that there is no solution}."
+			]
+		}
+	]
+}

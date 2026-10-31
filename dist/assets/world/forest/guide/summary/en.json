@@ -1,0 +1,83 @@
+{
+	"name": "Guide",
+	"guide": "How to use the Guide",
+	"rule": {
+		"name": "Rules",
+		"gameplay": "How the game progresses",
+		"common": {
+			"name": "General",
+			"tile": "Adjacent tiles must match their patterns.",
+			"open": "Empty lots @t{forest_open.1.dr} is not roads @t{forest_road.2s.lr}.",
+			"open_road": "Roads into the same empty lot are connected."
+		},
+		"unlock_block": {
+			"name": "Unlocking Areas",
+			"connect": "Connect roads to unreached roads."
+		},
+		"complete_block": {
+			"name": "Completing Areas",
+			"fill": "Tile: Place tiles on all the cells.",
+			"road": "Road: Connect all the roads.",
+			"stump": "Stump: Make all the stumps sprout."
+		},
+		"clear_forest": {
+			"name": "Clearing the Forest",
+			"block": "Area: Complete Area @s{block_name/3439}."
+		},
+		"complete_forest": {
+			"name": "Completing the Forest",
+			"block": "Area: Complete all Areas.",
+			"stump": "Stump: Make all the stumps sprout.",
+			"flower": "Flower: Bloom all roads."
+		}
+	},
+	"tips": {
+		"name": "Tips",
+		"about": "About the \"Tips\" Guide",
+		"hint": "Hint Feature",
+		"unlock_block": {
+			"name": "Unlocking Areas",
+			"few_tiles": "Make clever use of a limited set of road tiles.",
+			"inaccessible": "Find cells a road cannot pass through.",
+			"via_open": "Connect roads via empty lots."
+		},
+		"complete_block": {
+			"name": "Completing Areas",
+			"common": {
+				"name": "general",
+				"candidate_1": "Focus on a single cell to find all possible tiles.",
+				"candidate_2": "Focus on neighboring cells to narrow down the candidates.",
+				"parity": "Focus on the parity.",
+				"color_imbalance": "Focus on the color imbalance of the cells."
+			},
+			"road": {
+				"name": "@t{forest_road.2s.lr} road",
+				"closed": "Try to avoid closing roads.",
+				"simple": "Simple road tiles alone cannot create branches or dead ends.",
+				"parity": "The parity of a simple road is determined by the colors of its endpoints."
+			},
+			"open": {
+				"name": "@t{open.blank} empty lot",
+				"fill": "Create empty lots to fill spaces where roads cannot pass.",
+				"where_to_place": "Where empty lots can be created is constrained by the surrounding tiles.",
+				"parity": "The perimeter of an empty lot occupies an even number of cells."
+			},
+			"open_road": {
+				"name": "@t{forest_open_road.l} lot-with-road",
+				"via_open": "Connect roads to empty lots to create branches and dead ends.",
+				"parity": "Create road endpoints to adjust color imbalance.",
+				"where_to_place": "Narrow down where the required lots-with-road can be created."
+			},
+			"stump": {
+				"name": "@t{forest_gate.r} stump",
+				"where_to_place": "Where stumps can be placed is constrained by the surrounding tiles.",
+				"parity": "The color imbalance of a stump pair is ±2.",
+				"beyond_block": "Stump pairs may span across Areas."
+			}
+		},
+		"complete_forest": {
+			"name": "Completing the Forest",
+			"approach": "When re-solving Areas, start with those that have fewer neighboring Areas."
+		}
+	}
+}

@@ -1,0 +1,43 @@
+{
+	"caption": "Approach to completing the Forest",
+	"content": [
+		"@g{rule/complete_forest/block}{Completing all Areas} alone is not enough to complete the Forest. You need to re-solve the Areas you have already completed in different ways and @g{rule/complete_forest/flower}{make flowers bloom on all roads}.",
+		"Since stumps affect things across Areas, when re-solving an Area, you also need to consider the surrounding Areas. @b{Areas with fewer neighboring Areas are easier to think about}, so it is a good idea to prioritize re-solving such Areas.",
+		{
+			"field": [0, 0]
+		},
+		{
+			"caption": "Example",
+			"content": [
+				"Let's think about how to re-solve these Areas so as to make flowers bloom on all roads.",
+				{
+					"field": [1, 0]
+				},
+				"First, look at the upper-left Area. There are closed roads that do not extend to any other Area. As long as these roads remain, the conditions cannot be satisfied, so this Area must be completed in a different way. When you actually re-solve it, it turns out as follows.",
+				{
+					"field": [1, 1]
+				},
+				"Next, look at the lower-left Area. There is not enough room to create a stump pair, so it cannot be completed in a different way in the first place. Therefore, to make flowers bloom on the roads in this Area, you need to bring flowers in from the central Area.",
+				{
+					"field": [1, 2]
+				},
+				"Then, look at the right Area. If flowers can be brought in from the central Area, you can make flowers bloom on the roads without re-solving it. On the other hand, by re-solving it as follows, you can make flowers bloom without relying on the central Area.",
+				{
+					"field": [1, 3]
+				},
+				"Finally, consider the central Area. Thanks to examining the surrounding Areas first, the following points are already clear, making it easier to reason about.",
+				{
+					"items": [
+						"The road leading to the upper-left Area already has flowers, so it must not be sandwiched by a stump pair.",
+						"The road leading to the lower-left Area does not have flowers yet, so it must be sandwiched by a stump pair.",
+						"The road leading to the right Area may or may not be sandwiched by a stump pair."
+					]
+				},
+				"By making full use of the techniques for completing Areas that we have learned so far, the central Area can be re-solved as follows.",
+				{
+					"field": [1, 4]
+				}
+			]
+		}
+	]
+}

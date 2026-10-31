@@ -1,0 +1,152 @@
+{
+	"palettes": [
+		{
+			"id": "forest",
+			"icon": "",
+			"tiles": [
+				[
+					[
+						"forest_road.1.r",
+						"forest_road.1.d",
+						"forest_road.1.l",
+						"forest_road.1.u"
+					],
+					[
+						"forest_road.2s.lr",
+						"forest_road.2s.ud"
+					],
+					[
+						"forest_road.2t.dr",
+						"forest_road.2t.dl",
+						"forest_road.2t.ul",
+						"forest_road.2t.ur"
+					],
+					[
+						"forest_road.3.dlr"
+					]
+				],
+				[
+					[
+						"forest_open.1.dr",
+						"forest_open.1.dl",
+						"forest_open.1.ul",
+						"forest_open.1.ur"
+					],
+					[
+						"forest_open.2s.r",
+						"forest_open.2s.d",
+						"forest_open.2s.l",
+						"forest_open.2s.u"
+					],
+					[
+						"open.blank"
+					]
+				],
+				[
+					[
+						"forest_open_road.r",
+						"forest_open_road.d",
+						"forest_open_road.l",
+						"forest_open_road.u"
+					]
+				],
+				[
+					[
+						"forest.blank",
+						"forest.tree"
+					],
+					[
+						"forest_gate.r",
+						"forest_gate.d",
+						"forest_gate.l",
+						"forest_gate.u"
+					]
+				],
+				[
+					[
+						"sky.blank"
+					],
+					[
+						"forest_sky.2.u"
+					],
+					[
+						"forest_tree.1",
+						"forest_tree.2",
+						"forest_tree.3",
+						"forest_tree.4",
+						"forest_tree.5",
+						"forest_tree.6",
+						"forest_tree.7",
+						"forest_tree.8",
+						"forest_tree.9",
+						"forest_tree.10",
+						"forest_tree.11",
+						"forest_tree.12",
+						"forest_tree.13",
+						"forest_tree.14"
+					]
+				]
+			],
+			"terrains": [
+				{
+					"icon": "forest_road.2s.lr",
+					"required": 5,
+					"path": "road",
+					"tiles": {
+						"main": "forest_road",
+						"sub": "forest_open_road"
+					}
+				},
+				{
+					"icon": "forest_open.2s.d",
+					"required": 5,
+					"border": ["forest", "open"],
+					"tiles": {
+						"main": "forest_open",
+						"sub": "forest_open_road"
+					}
+				}
+			]
+		}
+	],
+	"rewards": {
+		"forest": {
+			"0": "forest_road.2s.lr",
+			"1": "forest_road.2t.ul",
+			"2": "forest_road.2t.dr",
+			"3": "forest_road.2t.ur",
+			"4": "forest_road.2t.dl",
+			"5": "forest_open.1.dr",
+			"6": "forest_open.1.dl",
+			"7": "forest_open.1.ur",
+			"8": "forest_open.1.ul",
+			"9": "forest_road.2s.ud",
+			"10": "forest_open.2s.r",
+			"11": "forest_open.2s.l",
+			"12": "forest_open.2s.d",
+			"13": "forest_open.2s.u",
+			"14": "forest_open_road.l",
+			"15": "forest_open_road.d",
+			"16": "forest_open_road.r",
+			"17": "forest_open_road.u",
+			"18": "forest_tree.1",
+			"19": "forest_tree.2",
+			"20": "forest_tree.3",
+			"21": "forest_tree.4",
+			"22": "forest_tree.5",
+			"23": "forest_tree.6",
+			"24": "forest_tree.7",
+			"25": "forest_tree.8",
+			"26": "forest_tree.9",
+			"27": "forest_tree.10",
+			"28": "forest_tree.11",
+			"29": "forest_tree.12",
+			"30": "forest_tree.13",
+			"31": "forest_tree.14",
+			"32": "forest_gate.r",
+			"33": "forest_gate.l",
+			"34": "forest_gate.d",
+			"35": "forest_gate.u"
+		}
+	}
+}

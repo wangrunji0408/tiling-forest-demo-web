@@ -1,0 +1,32 @@
+{
+	"caption": "Create road branches and dead ends with lots-with-road.",
+	"content": [
+		"With lot-with-road tiles @t{forest_open_road.l}, you can create road branches and dead ends. However, doing so requires enough space.",
+		{
+			"items": [
+				"To create a road branch, you need an empty lot occupying at least 2 × 4 cells.",
+				"To create a road dead end, you need an empty lot occupying at least 2 × 3 cells."
+			]
+		},
+		{
+			"field": [0, 0]
+		},
+		{
+			"caption": "Example",
+			"content": [
+				"Assuming your available tiles are @t{forest_road.2s.lr} @t{forest_road.2t.dr} @t{forest_open.1.dr} @t{forest_open.2s.r} @t{forest_open_road.r} and their rotations, let's solve these Areas.",
+				{
+					"field": [1, 0]
+				},
+				"In both Areas, @g{tips/complete_block/road/simple}{you can tell from the number of incoming roads that a road branch or a dead end is required}. There is only one way to create an empty lot of the required size without overlapping the roads in each Area, as shown below.",
+				{
+					"field": [1, 1]
+				},
+				"After that, you just need to connect the roads to complete the Areas.",
+				{
+					"field": [1, 2]
+				}
+			]
+		}
+	]
+}

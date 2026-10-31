@@ -1,0 +1,16 @@
+﻿{
+	"caption": "@s{section_name/forest}: @s{block_name/} @s{block_name/c010}",
+	"content": {
+		"summary": "@s{hint/step}{1}",
+		"open": true,
+		"details": [
+			{
+				"guide": "tips/complete_block/common/candidate_1"
+			},
+			"@s{hint/common/possible/trivial}",
+			{
+				"field": [0, 0]
+			}
+		]
+	}
+}

@@ -1,0 +1,180 @@
+{
+	"caption": "@s{section_name/forest}",
+	"content": [
+		{
+			"if": {
+				"tile": "forest_gate.r"
+			},
+			"then": "@s{hint/forest/omit}"
+		},
+		[
+			{
+				"guide": "rule/clear_forest/block"
+			},
+			{
+				"if": {
+					"block": "3439"
+				},
+				"else": {
+					"slot": 0
+				}
+			},
+			{
+				"if": {
+					"tile": "forest_tree.14"
+				},
+				"else": {
+					"slot": 1
+				},
+				"then": {
+					"slot": 2
+				}
+			}
+		],
+		{
+			"caption": "@s{hint/unlock/title}",
+			"content": [
+				{
+					"slot": 3
+				},
+				{
+					"items": [
+						{
+							"if": {
+								"road": "(9, 4)"
+							},
+							"else": {
+								"if": {
+									"block": "20d6"
+								},
+								"then": "@g{hint/forest/unlock_road/9,4/20d6}{@s{block_name/20d6} @s{road/ul}}"
+							},
+							"then": null
+						},
+						{
+							"if": {
+								"road": "(16, 3)"
+							},
+							"else": {
+								"if": {
+									"block": "20d6"
+								},
+								"then": "@g{hint/forest/unlock_road/16,3/20d6}{@s{block_name/20d6} @s{road/r}}"
+							},
+							"then": null
+						},
+						{
+							"if": {
+								"road": "(9, 6)"
+							},
+							"else": {
+								"if": {
+									"block": "20d6"
+								},
+								"then": "@g{hint/forest/unlock_road/9,6/20d6}{@s{block_name/20d6} @s{road/dl}}"
+							},
+							"then": null
+						},
+						{
+							"if": {
+								"road": "(19, 14)"
+							},
+							"else": {
+								"if": {
+									"block": "59d7"
+								},
+								"then": "@g{hint/forest/unlock_road/19,14/59d7}{@s{block_name/59d7} @s{road/l}}"
+							},
+							"then": null
+						},
+						{
+							"if": {
+								"road": "(18, 7)"
+							},
+							"else": {
+								"if": {
+									"block": "3230"
+								},
+								"then": "@g{hint/forest/unlock_road/18,7/3230}{@s{block_name/3230} @s{road/u}}"
+							},
+							"then": null
+						},
+						{
+							"if": {
+								"road": "(15, 9)"
+							},
+							"else": {
+								"if": {
+									"block": "3230"
+								},
+								"then": "@g{hint/forest/unlock_road/15,9/3230}{@s{block_name/3230} @s{road/l}}"
+							},
+							"then": null
+						},
+						{
+							"if": {
+								"road": "(22, 10)"
+							},
+							"else": {
+								"if": {
+									"block": "3230"
+								},
+								"then": "@g{hint/forest/unlock_road/22,10/3230}{@s{block_name/3230} @s{road/r}}"
+							},
+							"then": null
+						},
+						{
+							"if": {
+								"road": "(35, 22)"
+							},
+							"else": {
+								"if": {
+									"block": "db03"
+								},
+								"then": "@g{hint/forest/unlock_road/35,22/db03}{@s{block_name/db03} @s{road/r}}"
+							},
+							"then": null
+						},
+						{
+							"if": {
+								"road": "(22, 24)"
+							},
+							"else": {
+								"if": {
+									"block": "adaa"
+								},
+								"then": "@g{hint/forest/unlock_road/22,24/adaa}{@s{block_name/adaa} @s{road/r}}"
+							},
+							"then": null
+						},
+						{
+							"if": {
+								"road": "(22, 28)"
+							},
+							"else": {
+								"if": {
+									"block": "d845",
+									"road": "(28, 24)"
+								},
+								"then": "@g{hint/forest/unlock_road/22,28/d845}{@s{block_name/d845} @s{road/dl}}"
+							},
+							"then": null
+						},
+						{
+							"if": {
+								"road": "(8, 27)"
+							},
+							"else": {
+								"if": {
+									"block": "f871"
+								},
+								"then": "@g{hint/forest/unlock_road/8,27/f871}{@s{block_name/f871} @s{road/l}}"
+							},
+							"then": null
+						}
+					]
+				}
+			]
+		}
+	]
+}

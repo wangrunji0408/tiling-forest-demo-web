@@ -1,0 +1,50 @@
+{
+	"block": [
+		{
+			"id": "fill",
+			"type": "fill_cells"
+		},
+		{
+			"id": "road",
+			"type": "connect_path",
+			"path": "road"
+		},
+		{
+			"id": "stump",
+			"type": "form_gate",
+			"gateId": "flower",
+			"path": "road"
+		}
+	],
+	"section": {
+		"forest": [
+			[
+				{
+					"id": "block_some",
+					"type": "complete_block",
+					"block": "3439"
+				}
+			],
+			[
+				{
+					"id": "block_all",
+					"type": "complete_block"
+				},
+				{
+					"id": "stump",
+					"type": "form_gate",
+					"gateId": "flower",
+					"path": "road",
+					"hidden": true
+				},
+				{
+					"id": "flower",
+					"type": "make_gate_unique",
+					"gateId": "flower",
+					"path": "road",
+					"hidden": true
+				}
+			]
+		]
+	}
+}

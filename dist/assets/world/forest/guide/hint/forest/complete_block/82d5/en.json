@@ -1,0 +1,4 @@
+[
+	"The cells @m{pending} cannot be filled @b{without using road tiles}.\nIn other words, a road must pass through the cells @m{pending}.",
+	"Keeping in mind that the road must not be closed within the Area, let's consider which tiles can be placed on the cells @m{info}.\n@s{hint/forest/road/closed/warning/existing/one_road}"
+]

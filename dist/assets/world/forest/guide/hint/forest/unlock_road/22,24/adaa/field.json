@@ -1,0 +1,10 @@
+{
+	"field": "hint/forest/field/adaa",
+	"progress": [
+		{"roads":["(5,0)","(1,1)"],"sections":{"forest":{"blocks":{"adaa":0}}},"tiles":[{"mark":"pending","pos":"(8,1)"}]},
+		{"roads":["(5,0)","(1,1)"],"sections":{"forest":{"blocks":{"adaa":0}}},"tiles":[{"mark":"pending","pos":"(7,1)"},{"mark":"unsatisfied","pos":"(8,1)"}]},
+		{"roads":["(5,0)","(1,1)"],"sections":{"forest":{"blocks":{"adaa":0}}},"tiles":[{"mark":"unsatisfied","pos":"(7,1)"},{"mark":"unsatisfied","pos":"(8,1)"},{"mark":"pending","pos":"(8,2)"}]},
+		{"roads":["(5,0)","(1,1)"],"sections":{"forest":{"blocks":{"adaa":0}}},"tiles":[{"mark":"unsatisfied","pos":"(7,1)"},{"mark":"unsatisfied","pos":"(8,1)"},{"mark":"pending","pos":"(5,2)"},{"mark":"pending","pos":"(6,2)"},{"mark":"pending","pos":"(7,2)"},{"mark":"unsatisfied","pos":"(8,2)"}]},
+		{"roads":["(5,0)","(1,1)"],"sections":{"forest":{"blocks":{"adaa":0}}},"tiles":[{"mark":"info","pos":"(5,0)"},{"mark":"unsatisfied","pos":"(7,1)"},{"mark":"unsatisfied","pos":"(8,1)"},{"mark":"unsatisfied","pos":"(5,2)"},{"mark":"unsatisfied","pos":"(6,2)"},{"mark":"unsatisfied","pos":"(7,2)"},{"mark":"unsatisfied","pos":"(8,2)"}]}
+	]
+}

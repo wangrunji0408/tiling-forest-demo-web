@@ -1,0 +1,35 @@
+{
+	"caption": "Find cells a road cannot pass through.",
+	"content": [
+		"Especially early in the game, when you have only a few road tiles, the possible shapes of your roads are limited.\nIf you're having trouble connecting a road, @b{mark cells that the road cannot pass through with @m{unsatisfied}} to narrow down the possible routes.",
+		{
+			"caption": "Example",
+			"content": [
+				"Suppose your available tiles are @t{forest_road.2s.lr} @t{forest_road.2t.dr} @t{forest_road.2t.ul} @t{forest_road.2t.ur}. In the Area below, our goal is to reach the road on the right.",
+				{
+					"field": [0, 0]
+				},
+				"First, look at the cell @m{pending}. You don't have any tiles that can be placed on this cell.\nTherefore, the road cannot pass through the cell @m{pending}. Let's mark cells like this with @m{unsatisfied}.",
+				{
+					"field": [0, 1]
+				},
+				"Next, look at the cell @m{pending}. The only tiles that can be placed on this cell are @t{forest_road.2s.lr} and @t{forest_road.2t.dr}.",
+				{
+					"field": [0, 2]
+				},
+				"However, whichever tile you place, the road would have to enter the cell @m{unsatisfied} on the right.\nTherefore, the road cannot pass through the cell @m{pending} either.",
+				{
+					"field": [[0, 3], [0, 4]]
+				},
+				"Now we can see that, to keep the road from passing through the cells @m{unsatisfied}, it must be extended as shown below.\n@b{By identifying the cells @m{unsatisfied} that the road cannot pass through, we were able to narrow down the possible route.}",
+				{
+					"field": [0, 5]
+				},
+				"From here, simply extend the road straight ahead to connect it as shown.",
+				{
+					"field": [0, 6]
+				}
+			]
+		}
+	]
+}

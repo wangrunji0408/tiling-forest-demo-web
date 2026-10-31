@@ -1,0 +1,4 @@
+[
+	"Creating the required empty lot to include the cells @m{info} would make it impossible to connect all roads into a single network.",
+	"Even if the empty lot is created this way, it contains only one lot-with-road tile, so the color imbalance cannot be matched."
+]

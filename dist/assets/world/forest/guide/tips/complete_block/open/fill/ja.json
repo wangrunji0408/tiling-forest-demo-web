@@ -1,0 +1,39 @@
+﻿{
+	"caption": "空き地を作って、道が通せない場所を埋める",
+	"content": [
+		"空き地の角タイル @t{forest_open.1.dr} @t{forest_open.1.dl} @t{forest_open.1.ul} @t{forest_open.1.ur} が揃うと、空き地が作れるようになります。",
+		{
+			"field": [0, 0]
+		},
+		"道と空き地しか作れない状況では、@b{道が通せない場所は空き地で埋めるしかありません}。",
+		{
+			"caption": "例",
+			"content": [
+				"手持ちのタイルが @t{forest_road.2s.lr} @t{forest_road.2t.dr} @t{forest_open.1.dr} とこれらの回転であるとして、以下のエリアを解きます。",
+				{
+					"field": [1, 0]
+				},
+				"@m{pending} のマスに着目すると、ここに置けるタイルは @t{forest_road.2t.ur} @t{forest_open.1.ur} のどちらかです。",
+				{
+					"field": [1, 1]
+				},
+				"もし @t{forest_road.2t.ur} を置いた場合、狭くなっている場所 @m{unsatisfied} より外側へ道が出られないため、@g{rule/complete_block/road}{道をひとつながりにする}ことができません。",
+				{
+					"field": [1, 2]
+				},
+				"よって、@m{pending} のマスには空き地タイルを置いて、このように空き地を作るしかありません。",
+				{
+					"field": [1, 3]
+				},
+				"同様に、@m{pending} のマスにも道は通せないので、空き地を作ることになります。",
+				{
+					"field": [1, 4]
+				},
+				"残りのマスは道で埋めることができて、このようにエリアが完成します。",
+				{
+					"field": [1, 5]
+				}
+			]
+		}
+	]
+}
