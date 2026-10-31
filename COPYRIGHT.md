@@ -17,7 +17,7 @@ This is an **unofficial browser port**, independently implemented for study and 
 
 `dist/assets/world/` and the original map/tile/text data in `dist/data.json` were extracted from a locally installed copy of the original demo. These resources are **not** covered by any license that may apply to the independently written port code. Their original rights remain with their respective owners.
 
-`dist/assets/font/notosanssc-medium.otf` is the original bundled Noto Sans SC font. Its copyright belongs to the font's respective copyright holders; the SIL Open Font License is included in `dist/assets/font/LICENSE`.
+`dist/assets/font/notosanssc-medium.otf` is the original bundled Noto Sans SC font. Its copyright belongs to the font's respective copyright holders; `notosanssc-web.woff2` is a character subset generated from that font for faster web loading; the SIL Open Font License is included in `dist/assets/font/LICENSE`.
 
 The original Steam page separately credits OtoLogic (https://otologic.jp, CC BY 4.0) for **trailer** sound effects. This statement is specific to the trailer and must not be interpreted as a blanket license for this game's bundled music or sound effects.
 
