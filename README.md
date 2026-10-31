@@ -6,6 +6,12 @@
 
 **原版游戏、游戏设计、关卡、图像、音乐、音效、字体及相关商标的版权归原作者及各自权利人所有。此项目并非官方作品，与原作者没有隶属或背书关系。版权声明不构成原始素材的再分发授权。** 详细资源说明见 [COPYRIGHT.md](COPYRIGHT.md)。
 
+## 在线游玩
+
+[打开 GitHub Pages](https://wangrunji0408.github.io/tiling-forest-demo-web/)
+
+推送至 `main` 后，GitHub Actions 运行规则测试并自动将 `dist/` 部署至 GitHub Pages。
+
 ## 运行
 
 需要 Node.js 18 或更新版本，无需安装 npm 依赖。
